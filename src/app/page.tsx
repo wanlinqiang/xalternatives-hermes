@@ -24,6 +24,11 @@ const TOP_ALTERNATIVES = [
   { slug: "intercom-alternatives", name: "Intercom", desc: "Customer messaging & support platform", icon: "💬", visits: "80K+" },
   { slug: "hubspot-alternatives", name: "HubSpot", desc: "Inbound marketing, CRM & sales platform", icon: "📈", visits: "200K+" },
   { slug: "salesforce-alternatives", name: "Salesforce", desc: "Enterprise CRM & cloud applications", icon: "☁️", visits: "250K+" },
+  { slug: "zendesk-alternatives", name: "Zendesk", desc: "Customer service & help desk software", icon: "🎧", visits: "150K+" },
+  { slug: "loom-alternatives", name: "Loom", desc: "Async video messaging for work teams", icon: "🎬", visits: "100K+" },
+  { slug: "wordpress-alternatives", name: "WordPress", desc: "CMS & website builder for all sites", icon: "🌐", visits: "200K+" },
+  { slug: "calendly-alternatives", name: "Calendly", desc: "Scheduling & appointment booking", icon: "📅", visits: "80K+" },
+  { slug: "dropbox-business-alternatives", name: "Dropbox Business", desc: "Enterprise team cloud storage", icon: "📦", visits: "50K+" },
 ];
 
 export default function HomePage() {

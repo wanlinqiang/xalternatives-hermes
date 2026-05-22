@@ -122,10 +122,21 @@ const TOOLS_DATA: Record<string, {
         rating: "★★★★☆",
         affiliateText: "Try VistaCreate Free",
       },
+      {
+        name: "Adobe Express",
+        price: "Free / $9.99/mo",
+        freePlan: true,
+        bestFor: "Creative professionals & teams",
+        features: ["Adobe integration", "Premium templates", "Brand kit", "Video editing", "AI-powered design"],
+        affiliateUrl: "https://express.adobe.com",
+        rating: "★★★★☆",
+        affiliateText: "Try Adobe Express Free",
+      },
     ],
     faq: [
       { q: "Is Canva free to use?", a: "Yes, Canva has a generous free plan with thousands of templates. Pro plans start at $12.99/month." },
       { q: "What's better than Canva for professional design?", a: "Figma is preferred by professional designers for its vector tools and prototyping. Adobe Express offers Adobe ecosystem integration." },
+      { q: "Can I use Canva for commercial projects?", a: "Yes, Canva's free and paid plans both allow commercial use. Pro plans add brand kit features and team collaboration. Just ensure any images or elements you use comply with Canva's licensing terms." },
     ],
   },
   "zapier-alternatives": {
@@ -168,6 +179,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is there a free Zapier alternative?", a: "Yes. Make offers a free plan with 1,000 operations/month. n8n is free and open-source for self-hosting." },
       { q: "Which automation tool is best for developers?", a: "n8n is preferred by developers due to its open-source nature, self-hosting option, and custom code execution." },
+      { q: "Does Make support more apps than Zapier?", a: "Make supports over 1,200 apps, slightly fewer than Zapier's 6,000+, but Make's visual workflow builder and lower pricing make it a popular choice for complex automations." },
     ],
   },
   "slack-alternatives": {
@@ -210,6 +222,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is there a free Slack alternative?", a: "Yes. Discord and Microsoft Teams both offer generous free plans. Zulip also has a free cloud tier." },
       { q: "Which is better for business than Slack?", a: "Microsoft Teams integrates deeply with Office 365. Discord is better for community and casual teams." },
+      { q: "Can Slack replace email for internal communication?", a: "Many teams use Slack as their primary communication tool, reducing email volume significantly. However, for external communication, formal documentation, and searchable records, email still plays an important role." },
     ],
   },
   "asana-alternatives": {
@@ -294,6 +307,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is Monday.com free?", a: "Monday.com offers a free plan for up to 2 boards with unlimited items." },
       { q: "What is cheaper than Monday.com?", a: "ClickUp starts at $7/user/mo vs Monday.com at $9/seat/mo. Notion is also cheaper at $8/user/mo." },
+      { q: "Is Monday.com suitable for enterprise teams?", a: "Monday.com scales to enterprise with advanced automation, portfolio management, and integrations. However, teams needing deep custom workflows or complex resource management may prefer Asana or Jira." },
     ],
   },
   "airtable-alternatives": {
@@ -336,6 +350,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is Airtable free?", a: "Yes, Airtable has a free plan with 1,000 records per base and unlimited bases." },
       { q: "What is better than Airtable?", a: "Notion offers similar database functionality with better docs integration at a lower price. Coda excels at cross-doc references." },
+      { q: "Can Airtable replace a spreadsheet completely?", a: "For most use cases, yes. Airtable's spreadsheet-like interface makes it easy to transition from Excel or Google Sheets, while offering relational data, views, and automations that spreadsheets lack." },
     ],
   },
   "figma-alternatives": {
@@ -378,6 +393,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is Figma free?", a: "Yes, Figma has a free plan with unlimited files and 3 projects. Unlimited projects require $15/user/mo." },
       { q: "What is the best free alternative to Figma?", a: "Canva offers the most generous free plan for non-designers. Adobe XD also has a free tier for prototyping." },
+      { q: "Can Figma be used offline?", a: "Figma's desktop app for Mac and Windows has limited offline capabilities — you can view recent files but editing requires an internet connection. FigJam also requires online access." },
     ],
   },
   "trello-alternatives": {
@@ -1118,6 +1134,96 @@ const TOOLS_DATA: Record<string, {
       { q: "Does Salesforce offer a free version?", a: "Salesforce does not have a free CRM tier for teams. However, Salesforce Essentials exists for small businesses at $25/user/month — a limited but functional version of Salesforce." },
     ],
   },
+  "zendesk-alternatives": {
+    name: "Zendesk",
+    desc: "Customer service & help desk software for support teams",
+    searchVolume: "150K+ monthly searches",
+    longDescription: "Zendesk built its reputation as the gold standard for customer support software — its ticketing system, help center, and agent dashboard became the template that almost every competitor imitates. Founded in 2007, it grew from a simple support tool into a full customer service platform covering ticketing, live chat, talk (call center), sunbot (AI), and a marketplace of integrations. Zendesk's strength is breadth: if you need enterprise-grade customer support with complex routing, SLA management, and omnichannel delivery, Zendesk handles it. The problem is cost — at $19 per operator per month for Suite Team, costs escalate quickly as you add channels, AI features, and Sunshine CRM. For small businesses, the price-to-simplicity ratio often feels wrong. Freshdesk matches most of Zendesk's core features at a lower price point with strong automation. Help Scout takes an inbox-first approach that's simpler and cheaper. Intercom combines support with proactive messaging and product tours. For teams on a budget, alternatives like Crisp, Supportify, and Glia offer generous free tiers. The right choice depends on team size, support channel mix, and whether you need enterprise features or something simpler.",
+    alternatives: [
+      { name: "Freshdesk", price: "Free / $15/agent/mo", freePlan: true, bestFor: "Affordable help desk with strong automation", features: ["Ticketing & SLA", "Automations", "Knowledge base", "Multi-channel", "AI (Freddy)", "Marketplace"], affiliateUrl: "https://freshworks.com/freshdesk", rating: "★★★★☆", affiliateText: "Try Freshdesk Free" },
+      { name: "Help Scout", price: "$20/user/mo", freePlan: false, bestFor: "Inbox-first support for small teams", features: ["Shared inbox", "Docs knowledge base", "Mailbox", "Reports", "Integrations", "Beacon chat"], affiliateUrl: "https://helpscout.com", rating: "★★★★☆", affiliateText: "Try Help Scout Free Trial" },
+      { name: "Intercom", price: "$74/mo", freePlan: false, bestFor: "B2B SaaS wanting proactive customer messaging", features: ["Live chat", "Product tours", "Help desk", "Bots (Fin AI)", "Email marketing", "Customer profiles"], affiliateUrl: "https://intercom.com", rating: "★★★★☆", affiliateText: "Try Intercom Free Trial" },
+      { name: "Crisp", price: "Free / $25/operator/mo", freePlan: true, bestFor: "Budget-conscious SMBs wanting chat + email", features: ["Live chat", "Email marketing", "Chatbots", "Helpdesk", "Shared inbox", "Pop-ups"], affiliateUrl: "https://crisp.chat", rating: "★★★★☆", affiliateText: "Try Crisp Free" },
+      { name: "HubSpot Service Hub", price: "Free / $15/user/mo", freePlan: true, bestFor: "Teams already in HubSpot ecosystem", features: ["Ticketing", "Help desk", "Knowledge base", "Live chat", "Feedback surveys", "CRM integration"], affiliateUrl: "https://hubspot.com/products/service-hub", rating: "★★★★☆", affiliateText: "Try HubSpot Free" },
+    ],
+    faq: [
+      { q: "Is there a free Zendesk alternative?", a: "Yes. Freshdesk, HubSpot Service Hub, and Crisp all offer genuinely functional free plans for small support teams." },
+      { q: "What's cheaper than Zendesk?", a: "Freshdesk starts at $15/agent/month vs Zendesk at $19/operator/month. Help Scout at $20/user/month is comparable. For very small teams, Crisp's free plan is the most generous." },
+      { q: "Can I migrate from Zendesk easily?", a: "Most alternatives offer Zendesk import tools. Freshdesk and Help Scout both have well-documented migration paths for tickets, articles, and user data." },
+    ],
+  },
+  "loom-alternatives": {
+    name: "Loom",
+    desc: "Video messaging & async video recording tool for work teams",
+    searchVolume: "100K+ monthly searches",
+    longDescription: "Loom became the defining tool for async video at work — letting you record your screen and camera in seconds and share via a link that viewers can watch on demand. It's particularly valuable for remote teams: instead of scheduling a meeting, you record a quick walkthrough and send a link. Loom's browser extension makes recording frictionless, and the built-in editing (trim, reactions, captions) adds polish without extra tools. At $15 per user per month for Pro, or $12.50 per month billed annually, it's not cheap for what is essentially a screen recording tool — and many users feel the price is steep for a feature set that largely overlaps with free alternatives. Video itself is bandwidth-heavy, which can make Loom impractical in regions with poor connectivity. Competitors have closed the gap: OBS Studio is completely free and open-source with professional-quality recording. Camtasia offers more powerful editing at a lower annual price. Screencastify is popular in education. Vimeo and CloudApp offer similar screen recording with business features. For teams that want Loom's simplicity without the subscription, vidly and ScreenPal provide free tiers. The core question: do you need Loom's specific features like annotations and analytics, or does a free alternative cover your async video needs?",
+    alternatives: [
+      { name: "OBS Studio", price: "Free / Open source", freePlan: true, bestFor: "Power users wanting professional-quality recording", features: ["Open source", "Scene composition", "Audio mixing", "Streaming", "Plugins", "No watermarks"], affiliateUrl: "https://obsproject.com", rating: "★★★★★", affiliateText: "Download OBS Studio Free" },
+      { name: "Screencastify", price: "Free / $49/yr", freePlan: true, bestFor: "Educators and G Suite users", features: ["Chrome extension", "Webcam recording", "Editing", "G Drive export", "Annotations", "Gif export"], affiliateUrl: "https://screencastify.com", rating: "★★★★☆", affiliateText: "Try Screencastify Free" },
+      { name: "CloudApp", price: "Free / $12/user/mo", freePlan: true, bestFor: "Teams wanting screen recording + GIFs + screenshots", features: ["Screen recording", "GIF maker", "Annotated screenshots", "Custom branding", "Shareable links", "CRM integrations"], affiliateUrl: "https://cloudapp.com", rating: "★★★★☆", affiliateText: "Try CloudApp Free" },
+      { name: "ScreenPal", price: "Free / $6.75/mo", freePlan: true, bestFor: "Budget-conscious users wanting basic recording", features: ["Screen recording", "Video editing", "Hosting & sharing", "Quizzes", "Pricing tiers", "Mobile app"], affiliateUrl: "https://screencast-o-matic.com", rating: "★★★★☆", affiliateText: "Try ScreenPal Free" },
+      { name: "Vimeo", price: "Free / $7/user/mo", freePlan: true, bestFor: "Teams wanting video hosting + privacy controls", features: ["Video hosting", "Screen recording", "Privacy controls", "No ads", "Analytics", "Integrations"], affiliateUrl: "https://vimeo.com", rating: "★★★★☆", affiliateText: "Try Vimeo Free" },
+    ],
+    faq: [
+      { q: "Is there a free alternative to Loom?", a: "Yes. OBS Studio is completely free and open-source. Screencastify and ScreenPal both offer free tiers. CloudApp has a limited free plan." },
+      { q: "What is the best Loom alternative for professionals?", a: "Vimeo offers video hosting with better privacy controls and no ads, making it popular for business use. OBS Studio is preferred for highest-quality recording without watermarks." },
+      { q: "Can Loom recordings be downloaded?", a: "Loom recordings can be downloaded on Pro and Business plans. The free plan only allows sharing via Loom links — viewers cannot download without a paid subscription." },
+    ],
+  },
+  "wordpress-alternatives": {
+    name: "WordPress",
+    desc: "Open-source CMS & website builder for blogs, business sites & e-commerce",
+    searchVolume: "200K+ monthly searches",
+    longDescription: "WordPress powers over 40% of all websites — from personal blogs to enterprise e-commerce stores. Its plugin ecosystem and theme marketplace give it unmatched flexibility: if you need a feature, there's probably a plugin for it. WooCommerce makes it a full e-commerce platform. The flip side is complexity: security requires constant vigilance (WordPress sites are frequent attack targets), performance optimisation is technical, and the admin experience feels dated compared to modern website builders. Hosting, maintenance, security plugins, and developer time add significant hidden costs beyond the free software itself. For simple business websites, Wix and Squarespace offer drag-and-drop builders with no technical maintenance required. Webflow gives designers more control without code. Ghost is purpose-built for blogging and newsletters. Shopify is purpose-built for e-commerce. Jekyll and Hugo are for developers who want static site simplicity. The right choice depends on your technical comfort level, budget, and whether you need the full flexibility of WordPress or would be better served by a managed platform.",
+    alternatives: [
+      { name: "Wix", price: "Free / $16/mo", freePlan: true, bestFor: "Non-technical users wanting drag-and-drop simplicity", features: ["Drag-and-drop editor", "200+ templates", "App market", "SEO tools", "E-commerce", "Mobile editor"], affiliateUrl: "https://wix.com", rating: "★★★★☆", affiliateText: "Try Wix Free" },
+      { name: "Webflow", price: "Free / $14/mo", freePlan: true, bestFor: "Designers wanting full creative control with clean code", features: ["Visual designer", "CMS built-in", "Hosting included", "Animations", "Interactions", "Clean code export"], affiliateUrl: "https://webflow.com", rating: "★★★★☆", affiliateText: "Try Webflow Free" },
+      { name: "Ghost", price: "Free / $9/mo", freePlan: true, bestFor: "Bloggers and newsletter creators", features: ["Newsletter subscriptions", "Membership & tiers", "SEO optimised", "Clean editor", "AMP support", "Open source"], affiliateUrl: "https://ghost.org", rating: "★★★★☆", affiliateText: "Try Ghost Free" },
+      { name: "Shopify", price: "Free / $29/mo", freePlan: true, bestFor: "E-commerce stores wanting an all-in-one platform", features: ["Online store", "Payment processing", "Shipping labels", "App store", "POS", "Sales channels"], affiliateUrl: "https://shopify.com", rating: "★★★★☆", affiliateText: "Try Shopify Free" },
+      { name: "Squarespace", price: "Free / $12/mo", freePlan: true, bestFor: "Creative professionals wanting beautiful templates", features: ["Award-winning templates", "Built-in SEO", "E-commerce", "Analytics", "Domain purchase", "Mobile optimised"], affiliateUrl: "https://squarespace.com", rating: "★★★★☆", affiliateText: "Try Squarespace Free" },
+    ],
+    faq: [
+      { q: "Is WordPress really free?", a: "WordPress software itself is free and open-source, but you'll pay for hosting ($5-30/month), a domain ($10-15/year), premium themes ($30-100), and plugins. Total cost of ownership for a business WordPress site is typically $200-500/year." },
+      { q: "What's the easiest WordPress alternative for beginners?", a: "Wix and Squarespace are the easiest alternatives — no technical knowledge required. They handle hosting, security, and maintenance for you, letting you focus on content." },
+      { q: "Can I migrate from WordPress to another platform?", a: "Yes. Most platforms offer WordPress importers. Ghost and Webflow have particularly good migration tools. Static site generators like Jekyll can also import WordPress content via XML export." },
+    ],
+  },
+  "calendly-alternatives": {
+    name: "Calendly",
+    desc: "Scheduling & appointment booking software for professionals",
+    searchVolume: "80K+ monthly searches",
+    longDescription: "Calendly solved a universally frustrating problem: coordinating meeting times across different time zones and calendars. By connecting to your Google Calendar or Outlook, it shows your availability and lets invitees book slots without the back-and-forth email dance. Its simplicity is the product — no clutter, no configuration, just share your link and people book. This elegance made it a dominant tool for sales, recruiting, consulting, and any professional service where scheduling is a bottleneck. However, Calendly's pricing has escalated: the free plan only allows one event type, and the $8/user/month Starter plan is required for features like round-robin distribution, team scheduling, and payment integration. Teams needing shared calendar views, Chrome extensions, or custom branding must upgrade to $13/user/month for Pro. Alternatives like Calendly's own free tier from competitors, HubSpot Meetings for inbound, and free options like Calendr and SavvyTime offer lower price points or free tiers. The core question: do you need Calendly's polished brand experience and integrations, or will a simpler free option do?",
+    alternatives: [
+      { name: "HubSpot Meetings", price: "Free", freePlan: true, bestFor: "Teams already using HubSpot CRM", features: ["Unlimited event types", "Round-robin", "Calendar integrations", "HubSpot CRM sync", "Embeddable links", "Buffer time"], affiliateUrl: "https://hubspot.com/products/meetings", rating: "★★★★☆", affiliateText: "Try HubSpot Meetings Free" },
+      { name: "OnceHub", price: "Free / $9/user/mo", freePlan: true, bestFor: "Teams wanting custom booking flows", features: ["Custom booking paths", "Workflow automation", "Buffer time", "Time zone intelligence", "Calendar integrations", "Client notifications"], affiliateUrl: "https://oncehub.com", rating: "★★★★☆", affiliateText: "Try OnceHub Free" },
+      { name: "Zoho Bookings", price: "Free / $9/user/mo", freePlan: true, bestFor: "Teams in the Zoho ecosystem", features: ["Calendar sync", "Staff management", "Online payments", "Zoho ecosystem", "Custom branding", "SMS reminders"], affiliateUrl: "https://zoho.com/bookings", rating: "★★★★☆", affiliateText: "Try Zoho Bookings Free" },
+      { name: "SavvyTime", price: "Free", freePlan: true, bestFor: "Remote teams across time zones", features: ["World clock view", "Meeting scheduler", "Time zone conversion", "Free forever", "Team features", "Browser-based"], affiliateUrl: "https://savvytime.com", rating: "★★★★☆", affiliateText: "Use SavvyTime Free" },
+      { name: "Clockwise", price: "Free / $18/user/mo", freePlan: true, bestFor: "Teams wanting AI-powered calendar optimisation", features: ["AI scheduling", "Focus time", "Calendar analytics", "Team insights", "Slack integration", "Meeting deflection"], affiliateUrl: "https://clockwise.so", rating: "★★★★☆", affiliateText: "Try Clockwise Free" },
+    ],
+    faq: [
+      { q: "Is there a free Calendly alternative?", a: "Yes. HubSpot Meetings is completely free with unlimited event types. SavvyTime is free forever. OnceHub and Zoho Bookings both have free plans." },
+      { q: "What is better than Calendly for teams?", a: "Clockwise uses AI to optimise your entire team calendar, finding the best meeting times and protecting focus time. OnceHub offers more custom booking flows for complex scheduling scenarios." },
+      { q: "Can I use Calendly without paying?", a: "Calendly's free plan is limited to one event type with basic scheduling. For multiple event types, team features, or integrations, you'll need the paid Starter plan at $8/user/month." },
+    ],
+  },
+  "dropbox-business-alternatives": {
+    name: "Dropbox Business",
+    desc: "Enterprise team cloud storage with admin controls & collaboration features",
+    searchVolume: "50K+ monthly searches",
+    longDescription: "Dropbox Business extends Dropbox's consumer-grade simplicity into team territory — adding admin controls, shared team spaces, centralised billing, and advanced permission management while keeping the same intuitive file sync experience that made Dropbox famous. Team members get 5TB per user (unlimited on Advanced and Enterprise), with features like Dropbox Paper for collaborative docs, Dropbox Sign for e-signatures, and the Showcase tool for creating visual presentations from stored files. For teams already using Dropbox personally, the transition to Business is seamless. However, the pricing at $15 per user per month for the Standard plan feels expensive compared to Google Workspace at $12 per user which includes Drive plus Docs, Sheets, Slides, Meet, and more. OneDrive at $5 per user is the cheapest of the big three. SharePoint is effectively free with Microsoft 365 Business Basic at $6 per user. For teams needing more than storage, Box offers deeper enterprise integrations. The key consideration: is your primary need file storage and sync (where competitors are cheaper), or do you specifically need Dropbox's collaboration tools, e-signatures, and Paper docs integration?",
+    alternatives: [
+      { name: "Google Workspace", price: "$12/user/mo", freePlan: false, bestFor: "Teams wanting storage + docs + meet in one", features: ["Gmail + Drive", "Docs, Sheets, Slides", "Meet (100 participants)", "Shared drives", "Admin console", "15GB per user free"], affiliateUrl: "https://workspace.google.com", rating: "★★★★★", affiliateText: "Try Google Workspace Free Trial" },
+      { name: "Microsoft 365 Business Basic", price: "$6/user/mo", freePlan: false, bestFor: "Teams wanting Teams + SharePoint + Office apps", features: ["Teams chat & meetings", "SharePoint", "Web Office apps", "1TB OneDrive per user", "Email hosting", "Admin centre"], affiliateUrl: "https://microsoft.com/en-us/microsoft-365/business", rating: "★★★★☆", affiliateText: "Try Microsoft 365 Business Basic" },
+      { name: "Box", price: "Free / $5/user/mo", freePlan: true, bestFor: "Enterprises needing compliance & advanced integrations", features: ["Security & compliance", "Box Shuttle", "Canvas integrations", "Box Platform", "Admin console", "eSignatures"], affiliateUrl: "https://box.com", rating: "★★★★☆", affiliateText: "Try Box Free" },
+      { name: "Egnyte", price: "$8/user/mo", freePlan: false, bestFor: "Teams needing content governance & security", features: ["Content governance", "Smart Spaces", "Egnyte Protect", "Hybrid deployment", "Integrations", "Compliance tools"], affiliateUrl: "https://egnyte.com", rating: "★★★★☆", affiliateText: "Try Egnyte Free Trial" },
+      { name: "Tresorit", price: "$12/user/mo", freePlan: false, bestFor: "Privacy-focused teams needing end-to-end encryption", features: ["End-to-end encryption", "Swiss data residency", "Zero-knowledge", "Custom policies", "Secure file sharing", "Audit logs"], affiliateUrl: "https://tresorit.com", rating: "★★★★☆", affiliateText: "Try Tresorit Free Trial" },
+    ],
+    faq: [
+      { q: "Is Dropbox Business worth the price?", a: "Dropbox Business at $15/user/month is expensive compared to Google Workspace ($12) or Microsoft 365 ($6-12). If you primarily need file storage and sync, alternatives are cheaper. If you specifically need Dropbox Paper, Sign, and Showcase, the price may be justified." },
+      { q: "What's the cheapest alternative to Dropbox Business?", a: "Microsoft 365 Business Basic at $6/user/month gives you Teams, SharePoint, OneDrive (1TB), and web Office apps — significantly more value than Dropbox Business at $15." },
+      { q: "Can I migrate from Dropbox Business easily?", a: "Yes. All major alternatives offer Dropbox importers. Google Workspace and Microsoft 365 both have tools to migrate Dropbox files and folder structures to their respective platforms." },
+    ],
+  },
 };
 
 function buildTitle(name: string) {
@@ -1173,12 +1279,11 @@ export function generateStaticParams() {
     { tool: ["intercom-alternatives"] },
     { tool: ["hubspot-alternatives"] },
     { tool: ["salesforce-alternatives"] },
-    { tool: ["monday-com-work-os"] },
-    { tool: ["asana-project-management"] },
-    { tool: ["slack-team-communication"] },
-    { tool: ["canva-graphic-design"] },
-    { tool: ["figma-ui-design"] },
-    { tool: ["photoshop-photo-editing"] },
+    { tool: ["zendesk-alternatives"] },
+    { tool: ["loom-alternatives"] },
+    { tool: ["wordpress-alternatives"] },
+    { tool: ["calendly-alternatives"] },
+    { tool: ["dropbox-business-alternatives"] },
   ];
 }
 

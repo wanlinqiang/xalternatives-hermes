@@ -31,5 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/intercom-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/hubspot-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/salesforce-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/zendesk-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/loom-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/wordpress-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/calendly-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/dropbox-business-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
