@@ -1,3 +1,4 @@
+// BestAlt.org — X Alternatives SEO-affiliate site | GA4: G-D7L8DHTGSB
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
