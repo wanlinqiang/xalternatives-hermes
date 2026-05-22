@@ -65,6 +65,9 @@ function Navbar() {
           <a href="/about" className="hover:text-white transition-colors">
             About
           </a>
+          <a href="/privacy" className="hover:text-white transition-colors">
+            Privacy
+          </a>
           <a href="/contact" className="hover:text-white transition-colors">
             Contact
           </a>
