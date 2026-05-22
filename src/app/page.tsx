@@ -18,6 +18,18 @@ const TOP_ALTERNATIVES = [
   { slug: "photoshop-alternatives", name: "Photoshop", desc: "Photo editing & digital art", icon: "🎨", visits: "500K+" },
   { slug: "github-alternatives", name: "GitHub", desc: "Code hosting & version control", icon: "💻", visits: "200K+" },
   { slug: "teams-alternatives", name: "Microsoft Teams", desc: "Team chat, meetings & collaboration", icon: "👥", visits: "250K+" },
+  { slug: "linear-alternatives", name: "Linear", desc: "Issue tracking for engineering teams", icon: "⚡", visits: "50K+" },
+  { slug: "clickup-alternatives", name: "ClickUp", desc: "All-in-one project management", icon: "✅", visits: "150K+" },
+  { slug: "basecamp-alternatives", name: "Basecamp", desc: "Project management & team chat", icon: "🏕️", visits: "100K+" },
+  { slug: "intercom-alternatives", name: "Intercom", desc: "Customer messaging & support platform", icon: "💬", visits: "80K+" },
+  { slug: "hubspot-alternatives", name: "HubSpot", desc: "Inbound marketing, CRM & sales platform", icon: "📈", visits: "200K+" },
+  { slug: "salesforce-alternatives", name: "Salesforce", desc: "Enterprise CRM & cloud applications", icon: "☁️", visits: "250K+" },
+  { slug: "monday-com-work-os", name: "Monday.com", desc: "Work OS for team workflows", icon: "📊", visits: "250K+" },
+  { slug: "asana-project-management", name: "Asana", desc: "Project management with multiple views", icon: "📋", visits: "300K+" },
+  { slug: "slack-team-communication", name: "Slack", desc: "Team communication & collaboration", icon: "💬", visits: "1M+" },
+  { slug: "canva-graphic-design", name: "Canva", desc: "Graphic design & visual content creation", icon: "🎨", visits: "450K+" },
+  { slug: "figma-ui-design", name: "Figma", desc: "Collaborative interface design tool", icon: "✏️", visits: "400K+" },
+  { slug: "photoshop-photo-editing", name: "Photoshop", desc: "Professional photo editing software", icon: "🎨", visits: "500K+" },
 ];
 
 export default function HomePage() {
@@ -46,8 +58,8 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="grid grid-cols-3 gap-4 text-center">
           {[
-            { n: "18+", label: "Tools Covered" },
-            { n: "90+", label: "Alternatives Listed" },
+            { n: "30+", label: "Tools Covered" },
+            { n: "150+", label: "Alternatives Listed" },
             { n: "100%", label: "Unbiased Reviews" },
           ].map((s) => (
             <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl p-6">
