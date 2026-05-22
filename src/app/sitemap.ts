@@ -20,5 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/confluence-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/jira-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/zoom-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/dropbox-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/powerpoint-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/photoshop-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/github-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/teams-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }

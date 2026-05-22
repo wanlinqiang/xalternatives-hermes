@@ -12,8 +12,12 @@ const TOP_ALTERNATIVES = [
   { slug: "trello-alternatives", name: "Trello", desc: "Kanban boards & task management", icon: "📌", visits: "250K+" },
   { slug: "evernote-alternatives", name: "Evernote", desc: "Note-taking & knowledge management", icon: "📒", visits: "200K+" },
   { slug: "confluence-alternatives", name: "Confluence", desc: "Team wiki & documentation", icon: "📖", visits: "150K+" },
-  { slug: "jira-alternatives", name: "Jira", desc: "Issue tracking & project management", icon: "🐞", visits: "350K+" },
   { slug: "zoom-alternatives", name: "Zoom", desc: "Video conferencing & meetings", icon: "📹", visits: "1M+" },
+  { slug: "dropbox-alternatives", name: "Dropbox", desc: "Cloud file storage & backup", icon: "☁️", visits: "300K+" },
+  { slug: "powerpoint-alternatives", name: "PowerPoint", desc: "Presentation & slide software", icon: "📊", visits: "350K+" },
+  { slug: "photoshop-alternatives", name: "Photoshop", desc: "Photo editing & digital art", icon: "🎨", visits: "500K+" },
+  { slug: "github-alternatives", name: "GitHub", desc: "Code hosting & version control", icon: "💻", visits: "200K+" },
+  { slug: "teams-alternatives", name: "Microsoft Teams", desc: "Team chat, meetings & collaboration", icon: "👥", visits: "250K+" },
 ];
 
 export default function HomePage() {
@@ -42,8 +46,8 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="grid grid-cols-3 gap-4 text-center">
           {[
-            { n: "13+", label: "Tools Covered" },
-            { n: "50+", label: "Alternatives Listed" },
+            { n: "18+", label: "Tools Covered" },
+            { n: "90+", label: "Alternatives Listed" },
             { n: "100%", label: "Unbiased Reviews" },
           ].map((s) => (
             <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl p-6">
