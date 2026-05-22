@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | BestAlt.org",
   },
   description:
-    "Discover the best alternatives to popular tools. Compare features, pricing, and find the perfect替代 for Notion, Canva, Zapier, Slack, and more.",
+    "Discover the best alternatives to popular tools. Compare features, pricing, and find the perfect alternative for Notion, Canva, Zapier, Slack, and more.",
   robots: { index: true, follow: true },
 };
 
@@ -82,7 +82,7 @@ function Footer() {
     <footer className="border-t border-white/10 mt-20 py-12 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
         <p className="mb-2">
-          © 2025 BestAlt.org — Find better tools, faster.
+          © 2026 BestAlt.org — Find Better Tools, Faster.
         </p>
         <p className="text-xs text-gray-600">
           Disclosure: Some links on this site are affiliate links. We may earn

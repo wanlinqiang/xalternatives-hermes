@@ -24,12 +24,6 @@ const TOP_ALTERNATIVES = [
   { slug: "intercom-alternatives", name: "Intercom", desc: "Customer messaging & support platform", icon: "💬", visits: "80K+" },
   { slug: "hubspot-alternatives", name: "HubSpot", desc: "Inbound marketing, CRM & sales platform", icon: "📈", visits: "200K+" },
   { slug: "salesforce-alternatives", name: "Salesforce", desc: "Enterprise CRM & cloud applications", icon: "☁️", visits: "250K+" },
-  { slug: "monday-com-work-os", name: "Monday.com", desc: "Work OS for team workflows", icon: "📊", visits: "250K+" },
-  { slug: "asana-project-management", name: "Asana", desc: "Project management with multiple views", icon: "📋", visits: "300K+" },
-  { slug: "slack-team-communication", name: "Slack", desc: "Team communication & collaboration", icon: "💬", visits: "1M+" },
-  { slug: "canva-graphic-design", name: "Canva", desc: "Graphic design & visual content creation", icon: "🎨", visits: "450K+" },
-  { slug: "figma-ui-design", name: "Figma", desc: "Collaborative interface design tool", icon: "✏️", visits: "400K+" },
-  { slug: "photoshop-photo-editing", name: "Photoshop", desc: "Professional photo editing software", icon: "🎨", visits: "500K+" },
 ];
 
 export default function HomePage() {

@@ -31,11 +31,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/intercom-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/hubspot-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/salesforce-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/monday-com-work-os`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/asana-project-management`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/slack-team-communication`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/canva-graphic-design`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/figma-ui-design`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/photoshop-photo-editing`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
