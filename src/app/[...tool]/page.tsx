@@ -10,6 +10,7 @@ const TOOLS_DATA: Record<string, {
   name: string;
   desc: string;
   searchVolume: string;
+  longDescription?: string;
   alternatives: Array<{
     name: string;
     price: string;
@@ -26,6 +27,7 @@ const TOOLS_DATA: Record<string, {
     name: "Notion",
     desc: "All-in-one workspace for notes, docs, wikis & project management",
     searchVolume: "500K+ monthly searches",
+    longDescription: "Notion redefined what productivity software could be when it launched — combining docs, wikis, databases, and project management into a single flexible workspace. Its block-based editor lets you embed almost anything: tables, calendars, kanban boards, galleries, and even embedded web content. Teams use Notion for everything from company wikis to CRM systems to content calendars. The learning curve is real though: new users often feel overwhelmed by the flexibility. If you've hit Notion's limits — whether it's slow performance with large databases, limited offline mobile access, or pricing that scales uncomfortably — you're in good company. The alternatives below each take a different approach: ClickUp prioritizes project management depth, Coda leans into interconnected documents, Obsidian stays radically local, and Notion clones like AppFlowy give you self-hosted control. Each fills a gap Notion leaves open.",
     alternatives: [
       {
         name: "ClickUp",
@@ -86,8 +88,9 @@ const TOOLS_DATA: Record<string, {
   },
   "canva-alternatives": {
     name: "Canva",
-    desc: "Online graphic design platform for social media, presentations & branding",
+    desc: "Online design platform for social media graphics, presentations, logos & visual content",
     searchVolume: "450K+ monthly searches",
+    longDescription: "Canva democratized graphic design when it launched — making professional-quality visuals accessible to anyone without design training. It covers an enormous range of use cases: social media posts, presentations, logos, resumes, infographics, videos, and even websites. The template library is massive and the editor is genuinely intuitive, which is why over 100 million people use it monthly. Canva's free tier is generous enough for individuals and small teams to get real value. But Canva Pro at $12.99 per person per month adds team brand kits, unlimited folders, a content planner, and premium templates — costs that add up fast for growing teams. Some power users also find Canva limiting for precise, brand-consistent work: font control is constrained, exported files sometimes render unexpectedly, and the design options can feel shallow compared to dedicated tools. Figma excels at team design systems, Adobe tools remain unmatched for print and serious illustration, and Sketch offers a Mac-native alternative for UI/UX work. Canva's magic is in speed and accessibility; these alternatives trade that ease for depth.",
     alternatives: [
       {
         name: "Adobe Express",
@@ -127,8 +130,9 @@ const TOOLS_DATA: Record<string, {
   },
   "zapier-alternatives": {
     name: "Zapier",
-    desc: "Workflow automation platform connecting apps and automating tasks",
-    searchVolume: "200K+ monthly searches",
+    desc: "Workflow automation platform that connects apps and automates repetitive tasks",
+    searchVolume: "120K+ monthly searches",
+    longDescription: "Zapier pioneered the no-code automation space — letting non-technical users connect their apps and automate workflows without writing a single line of code. With over 6,000 app integrations, if an app has an API, Zapier probably connects to it. The concept is elegant: trigger an event in one app, and Zapier performs an action in another. Need to save Gmail attachments to Dropbox? Zapier handles it. The free plan gives you 5 active Zaps and 100 tasks per month — enough to get hooked but not enough for real work. Paid plans start at $19.99 per month for 3 users, and costs climb quickly as your automation needs grow: unlimited Zaps, premium apps, and multi-step workflows all require higher tiers. Power users also bump into Zapier's limits: complex conditional logic, looping, and real-time streaming aren't native. Make (Integromat) offers more sophisticated workflows at lower prices, n8n provides self-hosted automation with code flexibility, and Microsoft Power Automate ties deeply into the Microsoft ecosystem. The core question is whether your automations need to be simple and cloud-native or powerful and customizable.",
     alternatives: [
       {
         name: "Make (formerly Integromat)",
@@ -168,8 +172,9 @@ const TOOLS_DATA: Record<string, {
   },
   "slack-alternatives": {
     name: "Slack",
-    desc: "Business communication platform for teams and organizations",
+    desc: "Business communication platform for team messaging, channels & collaboration",
     searchVolume: "1M+ monthly searches",
+    longDescription: "Slack transformed how teams communicate since its 2013 launch — replacing email threads with searchable, organized channels and direct messages. It integrates with hundreds of tools, supports file sharing, threads, and has become the default hub for remote team conversation. The free plan is decent: unlimited channels and DMs, but message history is limited to 90 days and you can only pin 5 files. Once a team grows past a handful of people, Slack's cost (~$7.25 per user per month on the paid plan) starts to feel expensive — especially when you realize that most of what Slack does is send messages. Discord offers a genuinely comparable messaging experience for free with unlimited message history and voice channels, though it lacks enterprise admin controls. Microsoft Teams bundles chat, video, and file storage into Microsoft 365 for roughly the same price, making it a natural choice for Office-centric organizations. Google Chat is free for anyone with a Google account. And for teams that prioritize async communication over real-time chat, tools like Twist, Loom, and Basecamp's message boards offer fundamentally different philosophies. The right choice depends on whether you need Slack's ecosystem depth or something simpler.",
     alternatives: [
       {
         name: "Discord",
@@ -209,8 +214,9 @@ const TOOLS_DATA: Record<string, {
   },
   "asana-alternatives": {
     name: "Asana",
-    desc: "Project management and team collaboration platform",
+    desc: "Project management software for tracking tasks, timelines & team goals",
     searchVolume: "300K+ monthly searches",
+    longDescription: "Asana is one of the original project management tools — built by Facebook co-founders to solve internal communication chaos. It uses a clean, list-based interface with My Tasks, Inbox, and custom dashboards as core concepts. Asana handles everything from simple to-do lists to complex multi-project portfolios. Its strength is structure: clear assignments, due dates, dependencies, and workload management give teams clarity on who is doing what. The free plan is genuinely useful for small teams — unlimited tasks, projects, and users, though limited file storage and 15 automations per month. As you scale, pricing escalates quickly: $10.99 per user per month for Business (unlimited projects, timelines, forms), and $24.99 for Enterprise with advanced security. Teams coming from simpler tools sometimes find Asana overwhelming; the flip side is that it can handle almost any workflow complexity. Monday.com offers a more visual, colorful approach with more integrations. ClickUp is a powerful all-in-one that undercuts Asana on price. Todoist and TickTick are simpler for individuals. And for developers, Linear brings a beautifully fast, keyboard-driven issue tracker that some teams prefer over anything else.",
     alternatives: [
       {
         name: "ClickUp",
@@ -250,8 +256,9 @@ const TOOLS_DATA: Record<string, {
   },
   "monday-alternatives": {
     name: "Monday.com",
-    desc: "Work operating system for teams to manage projects and workflows",
+    desc: "Work OS platform for team management, CRM, automations & cross-team workflows",
     searchVolume: "250K+ monthly searches",
+    longDescription: "Monday.com positioned itself as a 'Work OS' — not just project management but a platform for any team workflow, from marketing campaigns to product roadmaps to HR hiring. It uses a colorful, visual board-based interface where you can switch between Kanban, Timeline, Calendar, Map, and Gallery views on the same board. The learning curve is gentler than Asana and it feels more approachable for non-technical teams. Monday's weakness is pricing: after a limited free tier, Individual plans at $9 per seat per month quickly jump to $16 per seat for Basic and $25 for Standard, and those per-seat fees add up fast as teams grow. Some users also report that Monday becomes slow with large boards or complex automations. Asana handles complex dependency management better. ClickUp undercuts Monday significantly on price. For software teams, Linear offers a dramatically faster and more focused experience. For creative agencies, Workamajig or Project.co offer specialized features. The key question: do you need a platform that can handle any workflow, or are you willing to use multiple specialized tools?",
     alternatives: [
       {
         name: "ClickUp",
@@ -291,8 +298,9 @@ const TOOLS_DATA: Record<string, {
   },
   "airtable-alternatives": {
     name: "Airtable",
-    desc: "Cloud-based spreadsheet-database hybrid for organizing anything",
+    desc: "Spreadsheet-database hybrid for building custom apps, CRMs & workflow tools",
     searchVolume: "350K+ monthly searches",
+    longDescription: "Airtable sits at the intersection of a spreadsheet and a database — letting you organize data in a tabular format while giving each record rich attachments, linked tables, and custom views. It's used for everything from content calendars and inventory tracking to full-featured CRM systems. The interface feels familiar to spreadsheet users but the relational data model is far more powerful. Airtable scales to serious business use cases: 100,000 records per base on the Enterprise plan. The free plan is limited to 1,200 records per base and 2GB storage — generous for personal projects but restrictive for business. Paid plans start at $20 per seat per month for Pro, and the per-seat model makes it expensive for large organizations. Notion combines Airtable-like databases with docs. Google Tables (formerly AppSheet) offers no-code app building from spreadsheets. Seatable is an open-source alternative with a similar concept. Coda's tables are comparable. And tools like Nocodb and Baserow let you self-host for free if you need full control.",
     alternatives: [
       {
         name: "Notion",
@@ -332,8 +340,9 @@ const TOOLS_DATA: Record<string, {
   },
   "figma-alternatives": {
     name: "Figma",
-    desc: "Collaborative interface design and prototyping tool",
+    desc: "Browser-based collaborative interface design tool for UI, UX & prototyping",
     searchVolume: "400K+ monthly searches",
+    longDescription: "Figma fundamentally changed collaborative design when it launched as the first browser-based design tool that multiple people could edit simultaneously — without installing software or dealing with file sync issues. It's become the default tool for UI/UX designers building interfaces, prototypes, and design systems. The real-time collaboration is genuinely magical: you see teammates' cursors, can comment inline, and share designs with a simple URL. Figma's free plan is generous for individuals and small teams: 3 projects, unlimited collaborators, and all the core features. Figma's drawbacks: performance degrades with complex files, the browser isn't always as responsive as a native app, and the design tool market is now crowded. Sketch was the original Mac-native alternative and still has loyal followers in the Apple ecosystem. Adobe XD is Adobe's answer to Figma with deep Creative Cloud integration. Canva acquired Affinity (maker of Photo and Designer) to enter the professional design space. Lunacy is a free Windows alternative with Figma file compatibility. And for simple designs, Canva Pro is often enough.",
     alternatives: [
       {
         name: "Canva",
@@ -373,8 +382,9 @@ const TOOLS_DATA: Record<string, {
   },
   "trello-alternatives": {
     name: "Trello",
-    desc: "Kanban-style list-making app for project management and team collaboration",
+    desc: "Kanban-based task and project management tool with boards, lists & cards",
     searchVolume: "250K+ monthly searches",
+    longDescription: "Trello made Kanban boards mainstream — its card-and-board system is one of the simplest ways to visualize a workflow. Cards move from list to list (To Do → In Progress → Done), you can add members, labels, due dates, and attachments. It's visual, intuitive, and requires almost no training. Atlassian acquired Trello in 2017 and kept it free for many use cases: unlimited cards and boards, 10 boards per workspace, and unlimited Power-Ups on the free plan. The Butler automation and additional boards require a paid Standard plan at $5 per user per month. Trello's simplicity is also its limitation: beyond basic Kanban, it lacks reporting, custom workflows, or advanced project management features. As teams grow, many migrate to Monday.com or ClickUp for more power. Notion offers flexible Kanban views alongside databases and docs. Jira is the serious choice for software teams managing sprints and backlogs. And open-source alternatives like Wekan provide self-hosted Kanban for free.",
     alternatives: [
       {
         name: "ClickUp",
@@ -435,8 +445,9 @@ const TOOLS_DATA: Record<string, {
   },
   "evernote-alternatives": {
     name: "Evernote",
-    desc: "Note-taking and organization app for capturing ideas, docs, and web clips",
+    desc: "Note-taking and knowledge management app for capturing ideas, web clips & tasks",
     searchVolume: "200K+ monthly searches",
+    longDescription: "Evernote was the original note-taking app that many people first used to organize their digital lives — clipping web pages, saving receipts, and keeping meeting notes in one place. At its peak it had over 225 million users. But Evernote's dominance created complacency: the apps became bloated, slow, and the pricing jumped to $12 per user per month for Teams. The free plan restricts you to 25MB uploads and 50 notes — genuinely not enough for regular use. Many longtime Evernote users have migrated in frustration. Obsidian stores everything locally in plain Markdown files with no vendor lock-in and a powerful graph view. Notion combines notes with databases and collaboration. Apple Notes is free and deeply integrated for iOS/Mac users. Bear is a beautiful, minimalist option for Apple users. Microsoft OneNote remains a powerful free option with deep organization features. The core question: do you need Evernote's specific features like web clipping and handwriting recognition, or would a simpler, cheaper, or more private solution work for you?",
     alternatives: [
       {
         name: "Obsidian",
@@ -497,8 +508,9 @@ const TOOLS_DATA: Record<string, {
   },
   "confluence-alternatives": {
     name: "Confluence",
-    desc: "Team workspace for docs, knowledge bases, and project collaboration from Atlassian",
+    desc: "Team wiki and documentation platform for knowledge sharing, meeting notes & guides",
     searchVolume: "150K+ monthly searches",
+    longDescription: "Confluence is Atlassian's enterprise wiki and documentation platform — deeply integrated with Jira for software teams, and widely used in large organizations for internal documentation, meeting notes, and knowledge bases. It excels at structured documentation with templates, hierarchies, and spaces that organize content across teams. Confluence's integration with Jira issues, Bitbucket code, and other Atlassian products makes it powerful for engineering teams. The problem is cost and complexity: Confluence Cloud starts at $5.70 per user per month for up to 10 users, but Enterprise is significantly more, and self-hosted Data Center licensing is a six-figure commitment for large organizations. Beyond cost, Confluence is notoriously slow and has a dated interface that users frequently complain about. Notion offers a much more modern experience for documentation at a lower price point. ClickUp Docs provides docs alongside project management. Coda builds documents that feel alive with embedded data. GitBook and Mintlify are purpose-built for API docs and developer documentation. Slite and Nuclino are lighter-weight wikis for smaller teams who find Confluence overkill.",
     alternatives: [
       {
         name: "Notion",
@@ -559,8 +571,9 @@ const TOOLS_DATA: Record<string, {
   },
   "jira-alternatives": {
     name: "Jira",
-    desc: "Enterprise issue tracking and project management tool from Atlassian",
+    desc: "Issue tracking and project management platform for software development teams",
     searchVolume: "350K+ monthly searches",
+    longDescription: "Jira is the dominant issue tracker for software development teams — built by Atlassian to manage sprints, backlogs, bug tracking, and Agile workflows. It integrates deeply with Confluence for documentation, Bitbucket for code, and dozens of developer tools. For large engineering organizations, Jira is often the de facto project management system. But Jira is infamously complex: getting it set up correctly requires consultants or significant internal expertise. The interface is cluttered and dated, the configuration options are overwhelming, and smaller teams often find it completely overkill. At $7.75 per user per month for the standard plan, it's also expensive for startups. Linear was built as a 'Jira done right' — beautifully fast, minimal configuration, and focused purely on software teams. ClickUp and Asana offer project management with developer-friendly features at lower prices. GitHub Issues is free and minimal for open-source projects. ZenHub ties directly into GitHub. Shortcut (formerly Clubhouse) is a story-focused alternative. The right choice depends on team size, workflow complexity, and whether you need enterprise-grade scale or something that doesn't require a week of onboarding.",
     alternatives: [
       {
         name: "Linear",
@@ -621,8 +634,9 @@ const TOOLS_DATA: Record<string, {
   },
   "zoom-alternatives": {
     name: "Zoom",
-    desc: "Video conferencing platform for meetings, webinars, and remote collaboration",
+    desc: "Video conferencing and online meeting platform for remote communication",
     searchVolume: "1M+ monthly searches",
+    longDescription: "Zoom became a household name during the COVID-19 pandemic — its reliable video quality and straightforward interface made it the default for remote meetings, webinars, and virtual events. The free plan allows 40-person group meetings with a 40-minute time limit, making it workable for casual use. Zoom's strengths are real: HD video, screen sharing, virtual backgrounds, breakout rooms, and recording. For businesses, Zoom Workplace plans at $13.33 per user per month add cloud recording, admin controls, and SSO. The platform has faced security scrutiny after 'Zoom-bombing' incidents, leading to significant improvements. Competitors have closed the gap: Google Meet now offers comparable quality for free, Microsoft Teams bundles video with chat and Office apps, and Discord offers free unlimited video calls with friends. For pure professional meetings, Zoom remains a top choice. For casual calls, many alternatives are free and unlimited. For webinars and large events, Zoom still leads in enterprise features, though platform costs add up.",
     alternatives: [
       {
         name: "Google Meet",
@@ -685,6 +699,7 @@ const TOOLS_DATA: Record<string, {
     name: "Dropbox",
     desc: "Cloud file storage and synchronization service for backing up and sharing files",
     searchVolume: "300K+ monthly searches",
+    longDescription: "Dropbox pioneered consumer cloud storage when it launched in 2008 — making it effortless to sync files across devices and share them with anyone via a link. Its desktop app creates a local folder that syncs automatically, and the web interface works anywhere. The free 2GB plan is modest by today's standards, which is why many users quickly hit the limit and upgrade. Dropbox Plus at $11.99 per month gives you 2TB of storage and is still one of the most popular cloud storage plans. What keeps Dropbox relevant is its ecosystem: Dropbox Paper for collaborative docs, Dropbox Sign for e-signatures, and integrations with tools like Slack, Zoom, and Notion. However, competitors now offer more storage for less: Google Drive gives 15GB free and 100GB for $1.99/month, pCloud offers lifetime plans, and iCloud is built into Apple devices. Nextcloud and Sync.com offer end-to-end encryption Dropbox lacks. For teams, Google Drive and Microsoft OneDrive provide better real-time collaboration on documents. The core question: do you need Dropbox's specific integrations and ecosystem, or just cloud file storage?",
     alternatives: [
       {
         name: "Google Drive",
@@ -747,6 +762,7 @@ const TOOLS_DATA: Record<string, {
     name: "PowerPoint",
     desc: "Microsoft's presentation software for creating slide decks and visual presentations",
     searchVolume: "350K+ monthly searches",
+    longDescription: "PowerPoint has been the default presentation software for decades — embedded in Microsoft 365 and used in virtually every business meeting, classroom, and conference room worldwide. It can do almost anything: animations, transitions, speaker notes, master slides, embedded media, charts, and more. For enterprise users, the integration with Teams, SharePoint, and OneDrive makes it the natural choice. But PowerPoint's depth is also its weakness: most users only scratch the surface of its features, making the expensive subscription feel wasteful for simple presentations. Microsoft charges $12.99 per user per month for Microsoft 365 Family, or it's bundled in Business plans starting at $6 per user per month. Free alternatives have caught up significantly: Google Slides is free with any Google account and handles most presentation needs. Canva offers more visually impressive templates without design experience. Apple Keynote is free for Apple users and widely considered more beautiful. Zoho Show is a free option with AI features. For the price of PowerPoint, you can get Canva Pro, Google Workspace, and still have money left over.",
     alternatives: [
       {
         name: "Canva",
@@ -809,6 +825,7 @@ const TOOLS_DATA: Record<string, {
     name: "Photoshop",
     desc: "Adobe's professional raster graphics editor for photo editing and digital art",
     searchVolume: "500K+ monthly searches",
+    longDescription: "Photoshop is the industry standard for photo editing — used by photographers, designers, artists, and marketers worldwide. Its layer-based editing, selection tools, retouching, and compositing capabilities are unmatched. Photoshop's Creative Cloud subscription costs $22.99 per month for the Photography Plan, or $59.49 per month for the full Creative Cloud All Apps plan. That's over $700 per year just to use one app, which has driven many users to alternatives. The subscription model also means you never own the software — stop paying and you lose access. GIMP is the most capable free alternative, offering professional-grade editing tools with a steep learning curve. Affinity Photo 2 is a one-time $69 purchase that covers most photographer needs without a subscription. Photopea runs entirely in a browser and can open PSD files, making it useful for occasional work. Canva has a surprisingly capable photo editor built in. Figma covers basic image editing for UI work. The core question: are you paying for Photoshop features you actually use, or are there cheaper tools that do what you need?",
     alternatives: [
       {
         name: "GIMP",
@@ -871,6 +888,7 @@ const TOOLS_DATA: Record<string, {
     name: "GitHub",
     desc: "Cloud platform for version control and collaborative software development",
     searchVolume: "200K+ monthly searches",
+    longDescription: "GitHub is the world's largest code hosting platform — with over 100 million developers, it's where open-source projects live and where most developers host their private repositories. GitHub Actions provides CI/CD, GitHub Copilot adds AI pair programming, and the platform integrates with virtually every developer tool. The free plan includes unlimited public and private repositories with 500MB storage per repo, making it genuinely useful for individual developers and small teams. GitHub's Copilot subscription at $10 per month adds AI code completion. The platform's dominance is real, but it comes with concerns: Microsoft owns GitHub, and some developers prefer platforms not tied to a tech giant. GitLab offers a full DevOps platform with built-in CI/CD, container registry, and security scanning on free plans. Bitbucket integrates deeply with Atlassian tools like Jira. For open-source projects that want independence, SourceForge and GitLab's public instances offer alternatives. Self-hosted options like Gitea and Forgejo are completely free and give you full control — useful for organizations with strict data residency requirements. The right choice depends on team size, budget, and how much you value platform features versus self-hosting control.",
     alternatives: [
       {
         name: "GitLab",
@@ -933,6 +951,7 @@ const TOOLS_DATA: Record<string, {
     name: "Microsoft Teams",
     desc: "Unified communication platform combining chat, video meetings, and file collaboration",
     searchVolume: "250K+ monthly searches",
+    longDescription: "Microsoft Teams is the communication hub bundled into Microsoft 365 — combining chat, video meetings, file storage, and app integrations into a single platform. For organizations already using Microsoft 365 (Office, Outlook, SharePoint), Teams feels natural and avoids the cost of adding another tool. Chat, channels, meetings, and file collaboration all work together seamlessly. The free version includes unlimited chat, 100 participants in meetings, and 10GB of team file storage. Teams Premium at $10 per user per month adds webinar hosting, AI transcription, and advanced meeting features. The case for alternatives is straightforward: Teams is bloated, the interface feels cluttered compared to Slack, and if your organization isn't in the Microsoft ecosystem, it can feel like a poor fit. Slack offers a cleaner interface and better organization with channels. Discord is free with unlimited message history and voice. Google Meet integrates with Google Workspace at $10 per user per month. Zoom leads in pure video quality and reliability. The right choice depends heavily on your existing software ecosystem and whether you need deep integration with Microsoft tools or prefer a focused communication tool.",
     alternatives: [
       {
         name: "Slack",
@@ -1069,6 +1088,15 @@ export default async function ToolAlternativesPage({ params }: Props) {
           {data.desc}. Updated May 2025 — ~{data.searchVolume}.
         </p>
       </header>
+
+      {/* Long Description / Overview */}
+      {data.longDescription && (
+        <section className="mb-10 p-6 bg-white/[0.03] border border-white/10 rounded-xl">
+          <p className="text-gray-300 leading-relaxed text-base">
+            {data.longDescription}
+          </p>
+        </section>
+      )}
 
       {/* Comparison Table */}
       <div className="overflow-x-auto mb-10 rounded-xl border border-white/10">
