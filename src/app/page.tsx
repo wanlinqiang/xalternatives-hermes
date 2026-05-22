@@ -4,11 +4,16 @@ const TOP_ALTERNATIVES = [
   { slug: "notion-alternatives", name: "Notion", desc: "All-in-one workspace for notes, docs & projects", icon: "📝", visits: "500K+" },
   { slug: "canva-alternatives", name: "Canva", desc: "Graphic design & visual content creation", icon: "🎨", visits: "450K+" },
   { slug: "zapier-alternatives", name: "Zapier", desc: "Workflow automation & app integration", icon: "⚡", visits: "120K+" },
-  { slug: "slack-alternatives", name: "Slack", desc: "Team communication & collaboration", icon: "💬", visits: "200K+" },
-  { slug: "asana-alternatives", name: "Asana", desc: "Project management & task tracking", icon: "📋", visits: "100K+" },
-  { slug: "monday-alternatives", name: "Monday.com", desc: "Work OS for teams & businesses", icon: "📊", visits: "150K+" },
-  { slug: "airtable-alternatives", name: "Airtable", desc: "Spreadsheet & database hybrid", icon: "🗃️", visits: "90K+" },
-  { slug: "figma-alternatives", name: "Figma", desc: "Collaborative interface design tool", icon: "✏️", visits: "180K+" },
+  { slug: "slack-alternatives", name: "Slack", desc: "Team communication & collaboration", icon: "💬", visits: "1M+" },
+  { slug: "asana-alternatives", name: "Asana", desc: "Project management & task tracking", icon: "📋", visits: "300K+" },
+  { slug: "monday-alternatives", name: "Monday.com", desc: "Work OS for teams & businesses", icon: "📊", visits: "250K+" },
+  { slug: "airtable-alternatives", name: "Airtable", desc: "Spreadsheet & database hybrid", icon: "🗃️", visits: "350K+" },
+  { slug: "figma-alternatives", name: "Figma", desc: "Collaborative interface design tool", icon: "✏️", visits: "400K+" },
+  { slug: "trello-alternatives", name: "Trello", desc: "Kanban boards & task management", icon: "📌", visits: "250K+" },
+  { slug: "evernote-alternatives", name: "Evernote", desc: "Note-taking & knowledge management", icon: "📒", visits: "200K+" },
+  { slug: "confluence-alternatives", name: "Confluence", desc: "Team wiki & documentation", icon: "📖", visits: "150K+" },
+  { slug: "jira-alternatives", name: "Jira", desc: "Issue tracking & project management", icon: "🐞", visits: "350K+" },
+  { slug: "zoom-alternatives", name: "Zoom", desc: "Video conferencing & meetings", icon: "📹", visits: "1M+" },
 ];
 
 export default function HomePage() {
@@ -37,7 +42,7 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="grid grid-cols-3 gap-4 text-center">
           {[
-            { n: "10+", label: "Tools Covered" },
+            { n: "13+", label: "Tools Covered" },
             { n: "50+", label: "Alternatives Listed" },
             { n: "100%", label: "Unbiased Reviews" },
           ].map((s) => (
