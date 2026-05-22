@@ -106,8 +106,8 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold text-white mb-3">Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy, please contact us at{" "}
-            <a href="mailto:privacy@bestalt.org" className="text-blue-400 hover:underline">
-              privacy@bestalt.org
+            <a href="mailto:nicebaiqing@gmail.com" className="text-blue-400 hover:underline">
+              Contact Us
             </a>
             .
           </p>
