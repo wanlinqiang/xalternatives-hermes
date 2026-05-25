@@ -36,5 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/wordpress-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/calendly-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/dropbox-business-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/grammarly-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/discord-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/hotjar-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/wrike-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/gitlab-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }

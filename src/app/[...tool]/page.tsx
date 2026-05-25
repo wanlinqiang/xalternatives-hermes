@@ -113,14 +113,14 @@ const TOOLS_DATA: Record<string, {
         affiliateText: "Try Figma Free",
       },
       {
-        name: "VistaCreate",
-        price: "Free / $10/mo",
-        freePlan: true,
-        bestFor: "Small businesses & social media managers",
-        features: ["10K+ templates", "Brand kit", "Video editing", "Social scheduler", "Background remover"],
-        affiliateUrl: "https://vistacreate.com",
+        name: "Sketch",
+        price: "$99/year",
+        freePlan: false,
+        bestFor: "Mac-native UI/UX design teams",
+        features: ["Mac-native app", "Vector editing", "Symbols & components", "Developer handoff", "Plugin ecosystem"],
+        affiliateUrl: "https://sketch.com",
         rating: "★★★★☆",
-        affiliateText: "Try VistaCreate Free",
+        affiliateText: "Try Sketch",
       },
       {
         name: "Adobe Express",
@@ -135,7 +135,7 @@ const TOOLS_DATA: Record<string, {
     ],
     faq: [
       { q: "Is Canva free to use?", a: "Yes, Canva has a generous free plan with thousands of templates. Pro plans start at $12.99/month." },
-      { q: "What's better than Canva for professional design?", a: "Figma is preferred by professional designers for its vector tools and prototyping. Adobe Express offers Adobe ecosystem integration." },
+      { q: "What's better than Canva for professional design?", a: "Figma is preferred by professional designers for its vector tools and prototyping. Sketch is the Mac-native choice for UI/UX work." },
       { q: "Can I use Canva for commercial projects?", a: "Yes, Canva's free and paid plans both allow commercial use. Pro plans add brand kit features and team collaboration. Just ensure any images or elements you use comply with Canva's licensing terms." },
     ],
   },
@@ -174,6 +174,16 @@ const TOOLS_DATA: Record<string, {
         affiliateUrl: "https://pabbly.com",
         rating: "★★★★☆",
         affiliateText: "Try Pabbly Free",
+      },
+      {
+        name: "Microsoft Power Automate",
+        price: "Free / $15/user/mo",
+        freePlan: true,
+        bestFor: "Microsoft ecosystem teams wanting deep Office integration",
+        features: ["Microsoft 365 integration", "RPA (robotic process automation)", "UI flows", "AI Builder", "700+ connectors"],
+        affiliateUrl: "https://flow.microsoft.com",
+        rating: "★★★★☆",
+        affiliateText: "Try Power Automate Free",
       },
     ],
     faq: [
@@ -265,6 +275,7 @@ const TOOLS_DATA: Record<string, {
     faq: [
       { q: "Is Asana free?", a: "Asana has a free plan for up to 15 users with unlimited tasks and projects." },
       { q: "What's the best alternative to Asana?", a: "ClickUp offers the most features at the lowest price. Linear is preferred by engineering teams for its speed and issue tracking." },
+      { q: "Can Asana handle large team projects?", a: "Yes, Asana's Business plan at $10.99/user/month handles unlimited projects, portfolios, and goals. Enterprise adds advanced security, automation rules, and dedicated support for very large organisations." },
     ],
   },
   "monday-alternatives": {
@@ -1224,6 +1235,96 @@ const TOOLS_DATA: Record<string, {
       { q: "Can I migrate from Dropbox Business easily?", a: "Yes. All major alternatives offer Dropbox importers. Google Workspace and Microsoft 365 both have tools to migrate Dropbox files and folder structures to their respective platforms." },
     ],
   },
+  "grammarly-alternatives": {
+    name: "Grammarly",
+    desc: "AI-powered writing assistant for grammar, spelling, clarity & tone correction",
+    searchVolume: "90K+ monthly searches",
+    longDescription: "Grammarly became the defining tool for AI-powered writing assistance — its browser extension and editor integrations check your grammar, spelling, punctuation, and tone as you type across virtually any website or application. What started as a grammar checker evolved into a full AI writing assistant capable of rewriting sentences for clarity, adjusting tone from formal to casual, and even generating draft text. The free plan covers basic grammar and spelling; Grammarly Premium at $12/month adds clarity improvements, tone detection, and genre-specific writing style checks. For teams, Grammarly Business adds brand tone profiles and analytics. The core value proposition is simple: catch mistakes before you send. The criticism is equally persistent: some argue it makes writing generic, and power users often find its suggestions annoying or inaccurate in technical contexts. Alternatives like Hemingway App focus on readability scores and cutting clutter. LanguageTool offers similar grammar checking with open-source roots. ProWritingAid gives deeper structural analysis for serious editors. Wordtune and Jasper focus on AI-powered rewriting. The question isn't whether Grammarly works — it does — but whether you need a paid subscription or a free alternative covers your needs.",
+    alternatives: [
+      { name: "LanguageTool", price: "Free / $9.99/mo", freePlan: true, bestFor: "Free open-source grammar & style checker", features: ["Open source", "Multi-language", "Browser extension", "Add-ons for Word/Google", "30K checks/month free"], affiliateUrl: "https://languagetool.org", rating: "★★★★☆", affiliateText: "Try LanguageTool Free" },
+      { name: "Hemingway App", price: "Free (online) / $19.99 (desktop)", freePlan: true, bestFor: "Writers wanting readable, clear prose", features: ["Readability score", "Highlight hard sentences", "Adverb removal", "Passive voice detection", "Simple interface"], affiliateUrl: "https://hemingwayapp.com", rating: "★★★★☆", affiliateText: "Try Hemingway App Free" },
+      { name: "ProWritingAid", price: "$50/yr", freePlan: false, bestFor: "Professional editors & serious writers", features: ["Deep writing reports", "18 hundred analyses", "Thesaurus integration", "Scenes & POV check", "50+ grammar styles"], affiliateUrl: "https://prowritingaid.com", rating: "★★★★★", affiliateText: "Try ProWritingAid" },
+      { name: "Wordtune", price: "Free / $10/mo", freePlan: true, bestFor: "AI-powered rewriting & rephrasing", features: ["AI rewriting", "Tone adjustment", "Shorten or expand", "Chrome extension", "Google Docs integration"], affiliateUrl: "https://wordtune.com", rating: "★★★★☆", affiliateText: "Try Wordtune Free" },
+      { name: "Ginger Software", price: "Free / $14.99/mo", freePlan: true, bestFor: "Budget users wanting translation + grammar", features: ["Grammar checker", "Sentence rephraser", "Translation (40+ langs)", "Personal trainer", "Mobile keyboard"], affiliateUrl: "https://gingersoftware.com", rating: "★★★★☆", affiliateText: "Try Ginger Free" },
+    ],
+    faq: [
+      { q: "Is Grammarly free?", a: "Grammarly has a free plan covering basic grammar and spelling checks. Grammarly Premium at $12/month adds clarity improvements, tone detection, and genre-specific suggestions." },
+      { q: "What's the best free alternative to Grammarly?", a: "LanguageTool is the best free alternative — open source, supports 30+ languages, and has a generous free tier. Hemingway App is also free online and focuses on readability." },
+      { q: "Can Grammarly replace a human editor?", a: "No — Grammarly catches mechanical errors but can't replace human judgment on style, structure, or content. Professional editors still add irreplaceable value for serious writing." },
+    ],
+  },
+  "discord-alternatives": {
+    name: "Discord",
+    desc: "Voice, video & text communication platform for communities, gaming & team collaboration",
+    searchVolume: "33K+ monthly searches",
+    longDescription: "Discord started as a voice communication tool for gamers — designed to be lighter and more reliable than TeamSpeak — but it quickly grew into a full-featured communication platform used by millions of communities, creator fandoms, developer groups, and even businesses. Its combination of text channels, voice channels, video calling, screen sharing, and sophisticated permission management makes it uniquely flexible. The free plan is genuinely generous: unlimited messages, unlimited file sharing, and no artificial limits on history. Discord Nitro at $9.99/month adds aesthetic personalisation and slightly better upload limits but the core experience is free. What makes Discord compelling is its community-oriented design philosophy — servers (communities) can be public or private, roles give fine-grained permissions, and bots automate everything from moderation to music. Teams considering Discord typically want something more professional than Slack but less formal than Microsoft Teams. Alternatives like Slack have better business integrations, Telegram offers simpler mobile-first messaging, and Mattermost provides self-hosted team chat. The right choice depends on whether you need a community platform or a business tool.",
+    alternatives: [
+      { name: "Slack", price: "Free / $7.25/user/mo", freePlan: true, bestFor: "Teams wanting organized business communication", features: ["Channels & DMs", "Huddles (voice)", "Slack Connect", "Workflow Builder", "Office integrations"], affiliateUrl: "https://slack.com", rating: "★★★★☆", affiliateText: "Try Slack Free" },
+      { name: "Telegram", price: "Free", freePlan: true, bestFor: "Mobile-first teams & communities", features: ["Mass channels", "Group chats (200K members)", "Bots & stickers", "Secret chats", "Cross-platform sync"], affiliateUrl: "https://telegram.org", rating: "★★★★☆", affiliateText: "Try Telegram Free" },
+      { name: "Microsoft Teams", price: "Free / $5/user/mo", freePlan: true, bestFor: "Enterprise teams in Microsoft ecosystem", features: ["Video meetings", "Chat & channels", "Office 365 integration", "File storage", "App integrations"], affiliateUrl: "https://teams.microsoft.com", rating: "★★★★☆", affiliateText: "Try Teams Free" },
+      { name: "TeamSpeak", price: "Free / $6.99/user/mo", freePlan: true, bestFor: "Gaming teams wanting low-latency voice", features: ["Ultra-low latency", "Self-hosted option", "Permission system", "Cross-platform", "Designed for gaming"], affiliateUrl: "https://teamspeak.com", rating: "★★★★☆", affiliateText: "Try TeamSpeak Free" },
+      { name: "Mattermost", price: "Free (self-hosted) / $10/user/mo", freePlan: true, bestFor: "Teams wanting open-source Slack alternative", features: ["Open source", "Self-hostable", "Mattermost Channels", "Integrations", "Enterprise security"], affiliateUrl: "https://mattermost.com", rating: "★★★★☆", affiliateText: "Try Mattermost Free" },
+    ],
+    faq: [
+      { q: "Is Discord free to use?", a: "Yes, Discord's free plan is genuinely unlimited — no message history limits, unlimited file uploads (within reason), and all core voice and text features. Nitro is purely for personal customisation." },
+      { q: "What's the best alternative to Discord for business?", a: "Slack is the most common business alternative to Discord — better integrations with business tools and a cleaner interface for professional use. Microsoft Teams is preferred for large enterprises." },
+      { q: "Can you use Discord for work teams?", a: "Many teams and businesses use Discord for communication, especially remote communities, creator businesses, and tech startups. However, it lacks some enterprise features like SAML SSO and advanced admin controls that Teams or Slack provide." },
+    ],
+  },
+  "hotjar-alternatives": {
+    name: "Hotjar",
+    desc: "User behavior analytics & session recording platform for understanding website visitors",
+    searchVolume: "55K+ monthly searches",
+    longDescription: "Hotjar made website user research accessible to non-technical teams — its session recordings let you literally watch how visitors navigate your site, and its heatmaps show where they click, scroll, and pause. Founded in 2014, it quickly became the standard tool for product teams and UX researchers who needed qualitative data alongside Google Analytics' quantitative numbers. The combination of recordings, heatmaps, and surveys (Net Promoter Score, customer satisfaction) gave teams a complete picture of user experience without requiring SQL or data science skills. Hotjar's free plan is limited to 35 recordings and 1 heatmap per month — enough to get started but not enough for ongoing research. Paid plans start at $32/month for more recordings and heatmaps, and costs scale with pageviews. The complaints are familiar: expensive for what you get, recordings can be slow to load, and filtering through recordings to find useful sessions is time-consuming. FullStory offers more advanced analytics and better search. LogRocket and Logmein (formerly GoTo) offer session replay with developer-focused features. Mouseflow is cheaper for basic heatmaps. Microsoft Clarity is completely free with heatmaps and session recordings. The core question: do you need qualitative user insights, or would Google Analytics + Microsoft Clarity cover your needs for free?",
+    alternatives: [
+      { name: "Microsoft Clarity", price: "Free", freePlan: true, bestFor: "Budget-conscious teams wanting heatmaps & recordings", features: ["Completely free", "Heatmaps", "Session recordings", "User segmentation", "No code required"], affiliateUrl: "https://clarity.microsoft.com", rating: "★★★★★", affiliateText: "Try Microsoft Clarity Free" },
+      { name: "FullStory", price: "$14/session/mo (Business)", freePlan: false, bestFor: "Enterprise teams wanting advanced analytics", features: ["Session replay", "Heatmaps", "Funnel analysis", "Error tracking", "Rage click detection"], affiliateUrl: "https://fullstory.com", rating: "★★★★☆", affiliateText: "Try FullStory Free Trial" },
+      { name: "LogRocket", price: "$74/mo", freePlan: false, bestFor: "Dev teams wanting session replay + console logs", features: ["Session replay", "Console logs", "Network requests", "Error tracking", "Redux support", "Performance monitoring"], affiliateUrl: "https://logrocket.com", rating: "★★★★☆", affiliateText: "Try LogRocket Free Trial" },
+      { name: "Mouseflow", price: "Free / $33/mo", freePlan: true, bestFor: "SMBs wanting affordable heatmaps & feedback", features: ["Heatmaps", "Session recordings", "Forms analytics", "Feedback campaigns", "Funnels", "Affordable pricing"], affiliateUrl: "https://mouseflow.com", rating: "★★★★☆", affiliateText: "Try Mouseflow Free" },
+      { name: "Smartlook", price: "Free / $39/mo", freePlan: true, bestFor: "Mobile app teams wanting event tracking", features: ["Web & mobile", "Event tracking", "Session recordings", "Heatmaps", "Auto-capture", "Conversion funnels"], affiliateUrl: "https://smartlook.com", rating: "★★★★☆", affiliateText: "Try Smartlook Free" },
+    ],
+    faq: [
+      { q: "Is there a free alternative to Hotjar?", a: "Microsoft Clarity is completely free with heatmaps and session recordings. Mouseflow and Smartlook also have free plans. FullStory and LogRocket require paid plans." },
+      { q: "What is better than Hotjar for enterprise?", a: "FullStory is preferred by enterprise teams for its advanced search, error tracking, and Rage Click detection. It integrates with most analytics and product tools." },
+      { q: "Can I use Hotjar without consent (GDPR)?", a: "Hotjar requires user consent under GDPR for tracking. You should display a consent banner and allow users to opt out. Microsoft Clarity also requires consent. Most analytics tools have consent management integrations." },
+    ],
+  },
+  "wrike-alternatives": {
+    name: "Wrike",
+    desc: "Enterprise project management & workflow automation for scaling teams",
+    searchVolume: "32K+ monthly searches",
+    longDescription: "Wrike positions itself between simple task managers and enterprise PPM (project portfolio management) tools — offering enough structure for complex projects while remaining accessible to teams that aren't project management experts. Its timeline, Gantt charts, and workload views give project managers visibility they can't get from simpler tools, while its automation engine handles routine status updates and task routing. Wrike's free plan supports up to 5 users with 2GB storage — decent for small teams but limited. The Professional plan at $9.80/user/month adds unlimited projects, custom workflows, and integrations. Enterprise plans add time tracking, security features, and dedicated support. What makes Wrike distinctive is its flexibility: it works equally well for marketing campaigns, software development, operations, and professional services. However, that flexibility can feel like complexity for teams that just need to track tasks. Asana and Monday.com are cleaner for most use cases. ClickUp undercuts Wrike significantly on price. For enterprise-level complexity, Microsoft Project or Planview offer more depth. The right tool depends on team size, project complexity, and whether you need the full power of enterprise PPM or something simpler.",
+    alternatives: [
+      { name: "Asana", price: "Free / $10.99/user/mo", freePlan: true, bestFor: "Teams wanting clean project & goal management", features: ["Portfolios", "Goals & OKRs", "Timeline (Gantt)", "Forms", "Automation", "10 free projects"], affiliateUrl: "https://asana.com", rating: "★★★★☆", affiliateText: "Try Asana Free" },
+      { name: "Monday.com", price: "Free / $9/seat/mo", freePlan: true, bestFor: "Teams wanting visual work management", features: ["Visual boards", "Automations", "Integrations", "Dashboards", "Templates", "15+ views"], affiliateUrl: "https://monday.com", rating: "★★★★☆", affiliateText: "Try Monday.com Free" },
+      { name: "ClickUp", price: "Free / $7/user/mo", freePlan: true, bestFor: "All-in-one teams wanting maximum features at low cost", features: ["50+ views", "Goals & docs", "Time tracking", "Whiteboards", "AI built-in", "BPMN workflows"], affiliateUrl: "https://clickup.com", rating: "★★★★☆", affiliateText: "Try ClickUp Free" },
+      { name: "Smartsheet", price: "$7/user/mo", freePlan: false, bestFor: "Excel users wanting project management with spreadsheet feel", features: ["Spreadsheet interface", "Gantt charts", "Resource management", "Sheet linking", "Automation", "Sheet history"], affiliateUrl: "https://smartsheet.com", rating: "★★★★☆", affiliateText: "Try Smartsheet Free Trial" },
+      { name: "Teamwork", price: "Free / $9/user/mo", freePlan: true, bestFor: "Agency & professional services teams", features: ["Client management", "Time tracking", "Billing & invoicing", "Project templates", "Team dashboard", "Mobile apps"], affiliateUrl: "https://teamwork.com", rating: "★★★★☆", affiliateText: "Try Teamwork Free" },
+    ],
+    faq: [
+      { q: "Is Wrike free?", a: "Wrike's free plan supports up to 5 users with 2GB storage and unlimited tasks. It's limited but functional for very small teams. Paid plans start at $9.80/user/month for Professional." },
+      { q: "What is the best alternative to Wrike?", a: "ClickUp is the most commonly cited Wrike alternative — offering more features at a significantly lower price. Asana is cleaner for teams preferring simplicity. Monday.com is better for visual thinkers." },
+      { q: "Is Wrike suitable for enterprise?", a: "Yes, Wrike has Enterprise plans with advanced security, portfolio management, time tracking, and dedicated support. However, for large-scale enterprise PPM (Project Portfolio Management), tools like Planview or Microsoft Project may offer more depth." },
+    ],
+  },
+  "gitlab-alternatives": {
+    name: "GitLab",
+    desc: "Complete DevOps platform with CI/CD, source code management & incident response",
+    searchVolume: "50K+ monthly searches",
+    longDescription: "GitLab is the most comprehensive open-core DevOps platform available — covering the entire software development lifecycle from issue tracking and source code management through CI/CD pipelines, container registry, security scanning, and incident management. Where GitHub focuses primarily on code hosting with Actions as an add-on, GitLab bakes everything into a single application. The free tier is remarkably generous: unlimited private repositories, CI/CD with 2,000 CI minutes per month, container registry, and static site hosting — features that cost extra on GitHub. GitLab's strength is its opinionated, integrated approach: everything from issue to deployment in one place. Its weakness is the same: the interface is more complex than GitHub's, and smaller teams can feel overwhelmed by options they don't need. For open-source projects, GitLab's free tier is often the clear winner over GitHub's free plan. For enterprises, GitLab Ultimate adds security policies, compliance, and portfolio management at significant cost. Alternatives include Azure DevOps for Microsoft shops, Bitbucket for Atlassian shops, and Gitea for teams wanting something lighter. The right choice depends on your ecosystem and how much integration you value versus simplicity.",
+    alternatives: [
+      { name: "GitHub", price: "Free / $4/user/mo", freePlan: true, bestFor: "Developers wanting the largest code hosting community", features: ["Unlimited repos (free)", "GitHub Actions", "GitHub Copilot", "Issues & Projects", "Discussions", "Largest OSS community"], affiliateUrl: "https://github.com", rating: "★★★★★", affiliateText: "Try GitHub Free" },
+      { name: "Bitbucket", price: "Free / $3/user/mo", freePlan: true, bestFor: "Atlassian ecosystem teams", features: ["Jira integration", "CI/CD (Pipelines)", "Branching workflows", "Mercurial support", "5 users free", "Cloud & Data Center"], affiliateUrl: "https://bitbucket.org", rating: "★★★★☆", affiliateText: "Try Bitbucket Free" },
+      { name: "Azure DevOps", price: "Free / $6/user/mo", freePlan: true, bestFor: "Microsoft ecosystem teams", features: ["Azure Repos", "Azure Pipelines", "Azure Boards", "Test Plans", "Artifacts", "Azure integration"], affiliateUrl: "https://azure.microsoft.com/en-us/services/devops/", rating: "★★★★☆", affiliateText: "Try Azure DevOps Free" },
+      { name: "Gitea", price: "Free / Open source", freePlan: true, bestFor: "Self-hosted teams wanting lightweight GitHub alternative", features: ["Open source", "Single binary", "Low resource usage", "GitHub compatible API", "Lightweight", "Active community"], affiliateUrl: "https://gitea.com", rating: "★★★★☆", affiliateText: "Try Gitea" },
+      { name: "Forgejo", price: "Free / Open source", freePlan: true, bestFor: "Community-governed fork of Gitea", features: ["Non-profit governed", "CIVIL values", "Fork of Gitea", "Lightweight", "GitHub compatible", "Migrating from GitLab"], affiliateUrl: "https://forgejo.org", rating: "★★★★☆", affiliateText: "Try Forgejo" },
+    ],
+    faq: [
+      { q: "Is GitLab free?", a: "Yes, GitLab's free tier is extremely generous: unlimited private repositories, 2,000 CI/CD minutes per month, container registry, and static site hosting — significantly more than GitHub's free tier." },
+      { q: "What's the best alternative to GitLab?", a: "GitHub is the most common alternative, especially for open-source projects wanting the largest community. Bitbucket is preferred by teams already in the Atlassian ecosystem. Azure DevOps is best for Microsoft shops." },
+      { q: "Can I self-host GitLab?", a: "Yes, GitLab offers both a free Community Edition that you can self-host and a Cloud version. Self-hosting requires significant resources but gives you full control over your infrastructure." },
+    ],
+  },
 };
 
 function buildTitle(name: string) {
@@ -1284,6 +1385,11 @@ export function generateStaticParams() {
     { tool: ["wordpress-alternatives"] },
     { tool: ["calendly-alternatives"] },
     { tool: ["dropbox-business-alternatives"] },
+    { tool: ["grammarly-alternatives"] },
+    { tool: ["discord-alternatives"] },
+    { tool: ["hotjar-alternatives"] },
+    { tool: ["wrike-alternatives"] },
+    { tool: ["gitlab-alternatives"] },
   ];
 }
 

@@ -29,6 +29,11 @@ const TOP_ALTERNATIVES = [
   { slug: "wordpress-alternatives", name: "WordPress", desc: "CMS & website builder for all sites", icon: "🌐", visits: "200K+" },
   { slug: "calendly-alternatives", name: "Calendly", desc: "Scheduling & appointment booking", icon: "📅", visits: "80K+" },
   { slug: "dropbox-business-alternatives", name: "Dropbox Business", desc: "Enterprise team cloud storage", icon: "📦", visits: "50K+" },
+  { slug: "grammarly-alternatives", name: "Grammarly", desc: "AI writing assistant & grammar checker", icon: "✍️", visits: "90K+" },
+  { slug: "discord-alternatives", name: "Discord", desc: "Voice, video & text for communities", icon: "🎮", visits: "33K+" },
+  { slug: "hotjar-alternatives", name: "Hotjar", desc: "User behavior analytics & heatmaps", icon: "🔥", visits: "55K+" },
+  { slug: "wrike-alternatives", name: "Wrike", desc: "Enterprise project management", icon: "📊", visits: "32K+" },
+  { slug: "gitlab-alternatives", name: "GitLab", desc: "DevOps platform with CI/CD", icon: "🦊", visits: "50K+" },
 ];
 
 export default function HomePage() {
