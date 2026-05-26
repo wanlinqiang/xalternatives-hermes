@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bestalt.org"),
   title: {
     default: "BestAlt.org — Find the Best Alternatives to Any Tool",
     template: "%s | BestAlt.org",

@@ -1443,7 +1443,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: buildTitle(data.name),
     description: buildDesc(data.name),
-    alternates: { canonical: `https://bestalt.org/${tool}/` },
+  alternates: { canonical: `https://www.bestalt.org/${tool}/` },
     openGraph: {
       title: buildTitle(data.name),
       description: buildDesc(data.name),

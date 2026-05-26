@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.bestalt.org/$1",
+      "permanent": true
+    }
+  ]
+}
