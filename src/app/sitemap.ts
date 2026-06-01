@@ -41,5 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/hotjar-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/wrike-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/gitlab-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/chatgpt-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/midjourney-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/capcut-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/runway-ml-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/leonardo-ai-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/power-automate-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/google-drive-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }

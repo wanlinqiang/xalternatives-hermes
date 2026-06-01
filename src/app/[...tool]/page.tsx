@@ -1425,6 +1425,132 @@ const TOOLS_DATA: Record<string, {
       { q: "Can I self-host GitLab?", a: "Yes, GitLab offers both a free Community Edition that you can self-host and a Cloud version. Self-hosting requires significant resources but gives you full control over your infrastructure." },
     ],
   },
+  "chatgpt-alternatives": {
+    name: "ChatGPT",
+    desc: "AI writing & coding assistant powered by large language models (LLMs)",
+    searchVolume: "5M+ monthly searches",
+    longDescription: "ChatGPT needs no introduction — OpenAI's conversational AI became the fastest-growing app in history when it launched in late 2022. It can write essays, debug code, brainstorm ideas, summarize documents, and answer questions across nearly any topic. The free tier uses GPT-3.5 which is capable but limited. GPT-4 in ChatGPT Plus ($20/mo) unlocks significantly better reasoning, multimodal input, and access to GPT Store agents. Teams and Enterprise tiers at $25-$30 per user offer higher limits and admin controls. Despite the crowded market, ChatGPT remains the reference point for AI assistants — but the competition has caught up dramatically. Claude from Anthropic excels at nuanced reasoning, ethics, and long documents. Google Gemini integrates deeply with Google Workspace. Perplexity offers real-time web search as you chat. Microsoft Copilot embeds AI into Windows and Office. Llama runs open-source locally. For most users, the best choice depends on their ecosystem: Google users benefit from Gemini, Microsoft users from Copilot, and those prioritizing safety and nuance from Claude.",
+    alternatives: [
+      { name: "Claude", price: "Free / $20/mo", freePlan: true, bestFor: "Users prioritizing nuanced, safe AI conversations", features: ["Extended thinking", "Large context window", "Ethical AI design", "Document analysis", " claude.ai"], affiliateUrl: "https://claude.ai", rating: "★★★★★", affiliateText: "Try Claude Free" },
+      { name: "Google Gemini", price: "Free / $20/mo", freePlan: true, bestFor: "Google ecosystem users", features: ["Google integration", "Multimodal input", "Real-time information", "YouTube integration", "Google Workspace"], affiliateUrl: "https://gemini.google.com", rating: "★★★★☆", affiliateText: "Try Gemini Free" },
+      { name: "Perplexity", price: "Free / $20/mo", freePlan: true, bestFor: "Research-focused AI with real-time web access", features: ["Real-time web search", "Source citations", "Pro search", "Image generation", "File upload"], affiliateUrl: "https://perplexity.ai", rating: "★★★★☆", affiliateText: "Try Perplexity Free" },
+      { name: "Microsoft Copilot", price: "Free / $30/user/mo", freePlan: true, bestFor: "Windows & Microsoft 365 users", features: ["Windows integration", "Office 365 integration", "Bing search", "DALL-E 3 image gen", "GPT-4 powered"], affiliateUrl: "https://copilot.microsoft.com", rating: "★★★★☆", affiliateText: "Try Copilot Free" },
+      { name: "Llama", price: "Free / Open source", freePlan: true, bestFor: "Developers & privacy-focused users wanting local AI", features: ["Open source", "Runs locally", "Custom fine-tuning", "No data leaving device", "Various model sizes"], affiliateUrl: "https://llama.meta.com", rating: "★★★★☆", affiliateText: "Download Llama Free" },
+    ],
+    faq: [
+      { q: "Is ChatGPT free?", a: "Yes, ChatGPT has a free tier using GPT-3.5. ChatGPT Plus at $20/month unlocks GPT-4, DALL-E image generation, and GPT Store agents." },
+      { q: "What is better than ChatGPT?", a: "Claude is preferred for nuanced reasoning and safety. Gemini excels for Google ecosystem users. Perplexity is better for research with real-time citations. The 'best' depends on your use case." },
+      { q: "Can I use ChatGPT for coding?", a: "Yes, ChatGPT (especially GPT-4) is widely used for code generation, debugging, and explaining complex code. GitHub Copilot, powered by the same underlying models, is specifically designed for coding." },
+    ],
+  },
+  "midjourney-alternatives": {
+    name: "Midjourney",
+    desc: "AI image generation tool creating artistic visuals from text prompts via Discord",
+    searchVolume: "500K+ monthly searches",
+    longDescription: "Midjourney became synonymous with AI art when it launched — its distinctive aesthetic, run through Discord, produced images that went viral on social media and in design communities. The model generates remarkably artistic results with minimal prompting, which made it accessible to non-designers. The free tier is limited; paid plans start at $10/month for roughly 200 images. As the AI image space exploded, so did the competition: OpenAI's DALL-E 3 is integrated into ChatGPT Plus and Bing Chat, making it incredibly accessible. Stable Diffusion is open-source, runs locally, and can be customized extensively. Newer entrants like Ideogram handle text-in-image much better than Midjourney. Flux produces highly photorealistic images. Leonardo.ai targets game assets and illustrations with community features. The result is that the 'best' AI image generator now depends entirely on your use case: Midjourney still leads for artistic/abstract work, DALL-E 3 for accessibility, Stable Diffusion for control, and Flux for realism.",
+    alternatives: [
+      { name: "Stable Diffusion", price: "Free / Open source", freePlan: true, bestFor: "Users wanting full control and open-source image generation", features: ["Open source", "Runs locally", "Custom models", "LoRA training", "ComfyUI workflow"], affiliateUrl: "https://stability.ai/stable-diffusion", rating: "★★★★★", affiliateText: "Try Stable Diffusion Free" },
+      { name: "DALL-E 3", price: "Free (via Bing) / $20/mo (via ChatGPT)", freePlan: true, bestFor: "Accessible AI image generation with accurate text rendering", features: ["Accurate text-in-image", "Bing integration", "ChatGPT integration", "High fidelity", "Safety filters"], affiliateUrl: "https://openai.com/dall-e-3", rating: "★★★★☆", affiliateText: "Try DALL-E 3 Free" },
+      { name: "Ideogram", price: "Free / $15/mo", freePlan: true, bestFor: "Accurate text rendering in AI images", features: ["Perfect text rendering", "Multiple styles", "Consistent typography", "Meme generation", "Image prompt improvement"], affiliateUrl: "https://ideogram.ai", rating: "★★★★☆", affiliateText: "Try Ideogram Free" },
+      { name: "Flux", price: "Free / $15/mo", freePlan: true, bestFor: "Photorealistic AI image generation", features: ["Photorealistic output", "Multiple versions (Schnell/Pro)", "Accurate text", "No content filters", "Developer API"], affiliateUrl: "https://flux.ai", rating: "★★★★★", affiliateText: "Try Flux Free" },
+      { name: "Leonardo.ai", price: "Free / $12/mo", freePlan: true, bestFor: "Game asset & illustration creators wanting community models", features: ["Community models", "Game asset focus", "ControlNet preprocessors", "Canvas editing", "Daily token system"], affiliateUrl: "https://leonardo.ai", rating: "★★★★☆", affiliateText: "Try Leonardo.ai Free" },
+    ],
+    faq: [
+      { q: "Is Midjourney free?", a: "Midjourney has a limited free trial (25 images) before requiring a paid subscription starting at $10/month for roughly 200 images." },
+      { q: "What is the best Midjourney alternative?", a: "Stable Diffusion is best for control and open-source use. DALL-E 3 is best for accessibility and text accuracy. Flux is best for photorealism. The choice depends on your priority." },
+      { q: "Can I use AI images commercially?", a: "Most AI image generators allow commercial use, but check each platform's terms. Images generated with Stable Diffusion from community models may have licensing restrictions depending on the model used." },
+    ],
+  },
+  "capcut-alternatives": {
+    name: "CapCut",
+    desc: "Video editing app by ByteDance for short-form content, social media & AI-powered edits",
+    searchVolume: "150K+ monthly searches",
+    longDescription: "CapCut took the creator economy by storm — ByteDance's (TikTok's parent) video editor became one of the most downloaded apps globally, particularly for short-form content editing. It combines an intuitive mobile interface with powerful AI features: auto-captions, background removal, object tracking, and one-tap effects. The desktop version expanded its reach to professional creators. CapCut's magic is accessibility: what used to require Premiere Pro knowledge now takes one-tap. But CapCut isn't free for everyone — while the mobile app is free, desktop Pro requires a subscription, and cloud storage/team features cost extra. Creators who grow past basic editing often need DaVinci Resolve for precision, Adobe Premiere for industry-standard workflows, or Final Cut Pro for Mac-native speed. InShot offers a simpler mobile-only alternative. The key question: do you need professional-grade control or just fast, great-looking content for social media?",
+    alternatives: [
+      { name: "DaVinci Resolve", price: "Free / $295 one-time", freePlan: true, bestFor: "Professional video editors wanting a capable free tier", features: ["Professional editing", "Color grading", "Fusion VFX", "Audio mixing", "Free forever"], affiliateUrl: "https://www.blackmagicdesign.com/products/davinciresolve/", rating: "★★★★★", affiliateText: "Download DaVinci Resolve Free" },
+      { name: "Adobe Premiere Pro", price: "$22.99/mo", freePlan: false, bestFor: "Industry-standard professional video production", features: ["Industry standard", "Dynamic timeline", "Audio cleanup", "Team collaboration", "Adobe integration"], affiliateUrl: "https://adobe.com/products/premiere.html", rating: "★★★★☆", affiliateText: "Try Premiere Pro Free Trial" },
+      { name: "Final Cut Pro", price: "$299 one-time", freePlan: false, bestFor: "Mac users wanting native professional editing", features: ["Mac-native", "M1/M2/M3 optimized", "Magnetic timeline", "Compressor integration", "Rent-to-own"], affiliateUrl: "https://www.apple.com/final-cut-pro/", rating: "★★★★★", affiliateText: "Try Final Cut Pro" },
+      { name: "InShot", price: "Free / $3.99/mo", freePlan: true, bestFor: "Mobile-first creators wanting simple editing", features: ["Mobile-focused", "Easy filters", "Music library", "Stickers & text", "Aspect ratio templates"], affiliateUrl: "https://inshot.com", rating: "★★★★☆", affiliateText: "Try InShot Free" },
+      { name: "DaVinci Resolve", price: "Free / $295 perpetual", freePlan: true, bestFor: "Editors needing professional color grading without ongoing cost", features: ["Fusion VFX compositing", "Fairlight audio", "Neural FX AI", "Free version complete", "Industry color science"], affiliateUrl: "https://blackmagicdesign.com", rating: "★★★★★", affiliateText: "Download DaVinci Resolve Free" },
+    ],
+    faq: [
+      { q: "Is CapCut free?", a: "CapCut's mobile app is free to download and use. The desktop Pro version requires a subscription. Some AI features are behind a paywall." },
+      { q: "What's better than CapCut for professional video editing?", a: "DaVinci Resolve is the most powerful free option with professional color grading and VFX. Adobe Premiere Pro is the industry standard. Final Cut Pro is best for Mac users." },
+      { q: "Can I use CapCut for YouTube videos?", a: "Yes, CapCut is excellent for YouTube short-form content. For long-form YouTube videos, DaVinci Resolve or Adobe Premiere offer more precision for editing workflows." },
+    ],
+  },
+  "runway-ml-alternatives": {
+    name: "Runway ML",
+    desc: "AI-powered video generation & editing platform for creators and filmmakers",
+    searchVolume: "50K+ monthly searches",
+    longDescription: "Runway ML positioned itself as the creative AI platform for filmmakers and video creators — moving beyond simple generation to actual video editing and post-production AI tools. Its Gen-1, Gen-2, and now Gen-3 models can generate video from text or image prompts, extend existing footage, and apply AI styles. Runway is used by professional studios and independent creators alike, particularly for tasks that previously required expensive VFX software. The free tier gives limited credits; paid plans start at $15/month for more generation credits. The AI video space is rapidly evolving: Pika Labs offers rapid, user-friendly generation. Stable Video from Stability AI is open-source and controllable. Kaiber focuses on artistic, animation-style video. Luma Dream Machine produces high-quality generation. Luma AI also offers incredible 3D scanning from phone video. The 'best' AI video tool changes monthly as capabilities evolve rapidly.",
+    alternatives: [
+      { name: "Pika Labs", price: "Free / $8/mo", freePlan: true, bestFor: "Creators wanting rapid, easy AI video generation", features: ["Text-to-video", "Image-to-video", "Video editing", "Mobile app", "Rapid generation"], affiliateUrl: "https://pika.art", rating: "★★★★☆", affiliateText: "Try Pika Labs Free" },
+      { name: "Stable Video", price: "Free / $10/mo", freePlan: true, bestFor: "Users wanting open-source controllable video generation", features: ["Open source", "Controllable parameters", "Image-to-video", "Text-to-video", "Self-hostable"], affiliateUrl: "https://stablevideo.com", rating: "★★★★☆", affiliateText: "Try Stable Video Free" },
+      { name: "Kaiber", price: "Free / $15/mo", freePlan: true, bestFor: "Artists wanting animation-style AI video", features: ["Artistic styles", "Animation focus", "Storytelling templates", "Audio-reactive", "Multiple AI models"], affiliateUrl: "https://kaiber.ai", rating: "★★★★☆", affiliateText: "Try Kaiber Free" },
+      { name: "Luma Dream Machine", price: "Free / $30/mo", freePlan: true, bestFor: "High-quality AI video generation with 3D awareness", features: ["High fidelity", "3D scene understanding", "Camera control", "Text & image input", "Developer API"], affiliateUrl: "https://dreammachine.lumalabs.ai", rating: "★★★★☆", affiliateText: "Try Luma Dream Machine Free" },
+      { name: "Luma AI", price: "Free / $20/mo", freePlan: true, bestFor: "Creating 3D scans and models from phone video", features: ["3D scanning", "Neural radiance fields", "iPhone LiDAR support", "Web-based viewer", "Export to 3D formats"], affiliateUrl: "https://lumalabs.ai", rating: "★★★★☆", affiliateText: "Try Luma AI Free" },
+    ],
+    faq: [
+      { q: "Is Runway ML free?", a: "Runway ML has a free tier with limited generation credits. Paid plans start at $15/month for additional credits." },
+      { q: "What is the best AI video generator?", a: "Currently, Runway ML is preferred by professionals. Pika is best for rapid social content. Stable Video is best for open-source control. Luma Dream Machine excels in quality. The field changes rapidly." },
+      { q: "Can I use AI-generated video commercially?", a: "Most AI video platforms allow commercial use of generated content, but verify each platform's terms. Content policies and safety filters vary between platforms." },
+    ],
+  },
+  "leonardo-ai-alternatives": {
+    name: "Leonardo.ai",
+    desc: "AI image generation platform specialized for game assets, illustrations & creative content",
+    searchVolume: "40K+ monthly searches",
+    longDescription: "Leonardo.ai carved out a specific niche in the crowded AI image space — targeting game developers, illustrators, and creative professionals who need consistent, controllable AI generation. It offers an impressive range of community-trained models, allowing users to pick styles optimized for different use cases: game assets, anime, photorealism, logos, and more. The platform combines the accessibility of cloud-based generation with meaningful depth through features like ControlNet preprocessors, Canvas editing, and a vibrant community sharing model weights. The free tier provides daily tokens, enough for casual experimentation. Paid plans at $12+/month offer more generations and priority processing. Compared to Midjourney (which is more artistic), Stable Diffusion (which requires local setup for equivalent results), and DALL-E 3 (which is more general-purpose), Leonardo.ai fills a specific gap: dedicated creative professionals who want community-backed style diversity without running their own GPU.",
+    alternatives: [
+      { name: "Midjourney", price: "$10/mo", freePlan: true, bestFor: "Artistic and abstract AI image generation", features: ["Distinctive artistic style", "Strong community", "Discord-based", "High-quality output", "Vibrant model evolution"], affiliateUrl: "https://midjourney.com", rating: "★★★★★", affiliateText: "Try Midjourney Free" },
+      { name: "Stable Diffusion", price: "Free / Open source", freePlan: true, bestFor: "Full control and open-source AI image generation", features: ["Open source", "Local deployment", "Custom models", "LoRA fine-tuning", "ComfyUI support"], affiliateUrl: "https://stability.ai/stable-diffusion", rating: "★★★★★", affiliateText: "Try Stable Diffusion Free" },
+      { name: "DALL-E 3", price: "Free (Bing) / $20/mo (ChatGPT)", freePlan: true, bestFor: "General-purpose AI image with accurate text rendering", features: ["Accurate text", "ChatGPT integration", "Bing integration", "High safety", "Photorealistic"], affiliateUrl: "https://openai.com/dall-e-3", rating: "★★★★☆", affiliateText: "Try DALL-E 3 Free" },
+      { name: "Ideogram", price: "Free / $15/mo", freePlan: true, bestFor: "AI image generation with reliable text rendering", features: ["Perfect text rendering", "Multiple aspect ratios", "Style presets", "Prompt improvement", "Meme creation"], affiliateUrl: "https://ideogram.ai", rating: "★★★★☆", affiliateText: "Try Ideogram Free" },
+      { name: "Playground", price: "Free / $12/mo", freePlan: true, bestFor: "Quick AI image generation with style mixing", features: ["Style mixing", "Fast generation", "Community prompts", "Multiple models", "Remix feature"], affiliateUrl: "https://playground.com", rating: "★★★★☆", affiliateText: "Try Playground Free" },
+    ],
+    faq: [
+      { q: "Is Leonardo.ai free?", a: "Leonardo.ai has a free tier with daily token allocation. Paid plans start at $12/month for more generations and priority processing." },
+      { q: "What is the best alternative to Leonardo.ai?", a: "Stable Diffusion offers the most control via local deployment. Midjourney excels at artistic images. DALL-E 3 is best for general use with accurate text. The choice depends on your specific needs." },
+      { q: "Can I use Leonardo.ai images commercially?", a: "Yes, images generated on Leonardo.ai can be used commercially under their terms of service, though you should verify current licensing terms." },
+    ],
+  },
+  "power-automate-alternatives": {
+    name: "Power Automate",
+    desc: "Microsoft's workflow automation platform integrated with Microsoft 365 & Azure ecosystem",
+    searchVolume: "40K+ monthly searches",
+    longDescription: "Power Automate (formerly Microsoft Flow) is Microsoft's answer to no-code automation — deeply integrated with the Microsoft 365 ecosystem and Azure services. If your organization runs Office 365, SharePoint, Teams, Dynamics 365, and Azure, Power Automate connects them seamlessly. It can automate approval workflows, sync SharePoint lists, post to Teams channels, process forms, and far more. The free plan is limited; per-user plans start at $15/user/month for unlimited flows. The UI flow (RPA) capability adds robotic process automation for legacy desktop apps. Power Automate's key advantage over competitors is ecosystem depth: it knows about your SharePoint lists, Dynamics data, and Azure services in a way third-party tools simply can't match. Make (formerly Integromat) offers more sophisticated visual workflow builder at a lower price. n8n provides open-source self-hosting for technical teams. Zapier has the broadest app catalog. Pabbly offers unlimited tasks at a flat rate. The choice typically comes down to ecosystem lock-in versus flexibility and price.",
+    alternatives: [
+      { name: "Make (formerly Integromat)", price: "Free / $9/mo", freePlan: true, bestFor: "Power users wanting sophisticated visual workflows at low cost", features: ["Visual workflow builder", "Data transformers", "Error handling paths", "Scheduling", "Multi-step scenarios"], affiliateUrl: "https://make.com", rating: "★★★★☆", affiliateText: "Try Make Free" },
+      { name: "n8n", price: "Free (self-hosted) / Cloud from $20/mo", freePlan: true, bestFor: "Developers wanting open-source automation with code flexibility", features: ["Open source", "Self-hostable", "Custom code execution", "400+ integrations", "Workflow templates"], affiliateUrl: "https://n8n.io", rating: "★★★★☆", affiliateText: "Try n8n Cloud Free" },
+      { name: "Zapier", price: "Free / $19.99/mo", freePlan: true, bestFor: "Users wanting the broadest app integration catalog", features: ["6,000+ integrations", "No-code", "Multi-step Zaps", "Filters & logic", "Webhook support"], affiliateUrl: "https://zapier.com", rating: "★★★★☆", affiliateText: "Try Zapier Free" },
+      { name: "Pabbly", price: "Free / $19/mo", freePlan: true, bestFor: "Budget-conscious businesses wanting unlimited tasks", features: ["Unlimited tasks", "Email marketing", "Form builder", "Workflow automation", "API integration"], affiliateUrl: "https://pabbly.com", rating: "★★★★☆", affiliateText: "Try Pabbly Free" },
+      { name: "Automate.io", price: "Free / $29/mo", freePlan: true, bestFor: "Simple automation for small business teams", features: ["200+ apps", "Visual builder", "Multi-step bots", "Team collaboration", "Webhooks"], affiliateUrl: "https://automate.io", rating: "★★★★☆", affiliateText: "Try Automate.io Free" },
+    ],
+    faq: [
+      { q: "Is Power Automate free?", a: "Power Automate has a limited free plan with per-user billing at $15/user/month for unlimited automated flows. UI flows (RPA) require additional licensing." },
+      { q: "What's the best alternative to Power Automate?", a: "Make offers a more sophisticated visual workflow builder at a lower price. n8n is preferred by developers for its open-source nature and self-hosting. Zapier has the most integrations." },
+      { q: "Does Power Automate work with non-Microsoft apps?", a: "Yes, Power Automate can connect to hundreds of third-party apps via connectors, though Microsoft ecosystem apps have the deepest integration." },
+    ],
+  },
+  "google-drive-alternatives": {
+    name: "Google Drive",
+    desc: "Cloud file storage, sync & sharing platform integrated with Google Workspace",
+    searchVolume: "200K+ monthly searches",
+    longDescription: "Google Drive is the reference point for cloud storage — 15GB free, deeply integrated with Google Docs, Sheets, Photos, and Android. For personal use and Google-centric organizations, it's a no-brainer. But Drive's per-user model (30GB for $2.99/mo in Google One) gets expensive for teams, and the sharing model can become a management nightmare at scale. Performance with large files is mixed, and offline mobile access requires explicit opt-in. OneDrive from Microsoft offers similar integration depth for Office users — your Word docs auto-save there, SharePoint sites connect naturally. pCloud offers lifetime plans at one-time cost, which many find cheaper long-term. Dropbox invented the category and still leads in cross-ecosystem compatibility — its reliability is legendary. iCloud is the natural choice for Apple households. Box targets enterprise document management with advanced compliance features. The best choice often comes down to your email ecosystem and whether you value one-time cost versus subscription.",
+    alternatives: [
+      { name: "OneDrive", price: "Free / $1.99/mo (100GB) / $5.99/mo (1TB)", freePlan: true, bestFor: "Microsoft ecosystem users wanting seamless Office integration", features: ["Office 365 integration", "Personal Vault", "File versioning", "Microsoft Photos integration", "Cross-platform"], affiliateUrl: "https://onedrive.com", rating: "★★★★☆", affiliateText: "Try OneDrive Free" },
+      { name: "pCloud", price: "Free / $4.99/mo (500GB) / $9.99/mo (2TB)", freePlan: true, bestFor: "Users wanting lifetime cloud storage plans", features: ["Lifetime plans", "pCloud Crypto", "File versioning", "Cross-platform", "EU data hosting option"], affiliateUrl: "https://pcloud.com", rating: "★★★★★", affiliateText: "Try pCloud Free" },
+      { name: "Dropbox", price: "Free / $9.99/mo (2TB)", freePlan: true, bestFor: "Users valuing cross-ecosystem reliability and app support", features: ["Smart Sync", "Dropbox Paper", "Transfer 100GB files", "Vault (passwords)", "Showcase (portfolios)"], affiliateUrl: "https://dropbox.com", rating: "★★★★☆", affiliateText: "Try Dropbox Free" },
+      { name: "iCloud", price: "Free / $0.99/mo (50GB) / $2.99/mo (200GB)", freePlan: true, bestFor: "Apple ecosystem users wanting seamless device sync", features: ["Apple device sync", "iCloud Photos", "Find My", "Numbers/Keynote/Pages integration", "Family sharing"], affiliateUrl: "https://icloud.com", rating: "★★★★☆", affiliateText: "Try iCloud Free" },
+      { name: "Box", price: "Free / $5/user/mo", freePlan: true, bestFor: "Enterprise teams needing advanced compliance & document management", features: ["Enterprise admin controls", "Advanced compliance", "Box Shield (security)", "Box Canvas (visual workspaces)", "800+ integrations"], affiliateUrl: "https://box.com", rating: "★★★★☆", affiliateText: "Try Box Free" },
+    ],
+    faq: [
+      { q: "Is Google Drive free?", a: "Google Drive gives every Google account 15GB of free storage shared across Google Drive, Gmail, and Google Photos. Additional storage is in Google One plans starting at $2.99/month." },
+      { q: "What is better than Google Drive?", a: "OneDrive is better for Microsoft users. pCloud offers lifetime one-time payment plans. Dropbox has the best cross-platform support. iCloud is best for Apple users." },
+      { q: "Can I use Google Drive for team collaboration?", a: "Yes, Google Drive allows file sharing and real-time collaboration on Docs, Sheets, and Slides. However, for large teams, per-user costs and SharePoint integration may become a factor." },
+    ],
+  },
 };
 
 function buildTitle(name: string) {
@@ -1490,6 +1616,13 @@ export function generateStaticParams() {
     { tool: ["hotjar-alternatives"] },
     { tool: ["wrike-alternatives"] },
     { tool: ["gitlab-alternatives"] },
+    { tool: ["chatgpt-alternatives"] },
+    { tool: ["midjourney-alternatives"] },
+    { tool: ["capcut-alternatives"] },
+    { tool: ["runway-ml-alternatives"] },
+    { tool: ["leonardo-ai-alternatives"] },
+    { tool: ["power-automate-alternatives"] },
+    { tool: ["google-drive-alternatives"] },
   ];
 }
 

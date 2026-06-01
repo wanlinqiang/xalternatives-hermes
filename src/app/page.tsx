@@ -34,6 +34,13 @@ const TOP_ALTERNATIVES = [
   { slug: "hotjar-alternatives", name: "Hotjar", desc: "User behavior analytics & heatmaps", icon: "🔥", visits: "55K+" },
   { slug: "wrike-alternatives", name: "Wrike", desc: "Enterprise project management", icon: "📊", visits: "32K+" },
   { slug: "gitlab-alternatives", name: "GitLab", desc: "DevOps platform with CI/CD", icon: "🦊", visits: "50K+" },
+  { slug: "chatgpt-alternatives", name: "ChatGPT", desc: "AI writing & coding assistant powered by LLMs", icon: "🤖", visits: "5M+" },
+  { slug: "midjourney-alternatives", name: "Midjourney", desc: "AI image generation tool via Discord", icon: "🎨", visits: "500K+" },
+  { slug: "capcut-alternatives", name: "CapCut", desc: "Video editing for short-form & social media", icon: "🎬", visits: "150K+" },
+  { slug: "runway-ml-alternatives", name: "Runway ML", desc: "AI video generation & editing platform", icon: "🎥", visits: "50K+" },
+  { slug: "leonardo-ai-alternatives", name: "Leonardo.ai", desc: "AI image generation for game assets & illustrations", icon: "🖼️", visits: "40K+" },
+  { slug: "power-automate-alternatives", name: "Power Automate", desc: "Microsoft workflow automation & RPA", icon: "⚡", visits: "40K+" },
+  { slug: "google-drive-alternatives", name: "Google Drive", desc: "Cloud file storage & Google Workspace sync", icon: "☁️", visits: "200K+" },
 ];
 
 export default function HomePage() {
