@@ -122,16 +122,6 @@ const TOOLS_DATA: Record<string, {
         rating: "★★★★☆",
         affiliateText: "Try Sketch",
       },
-      {
-        name: "Adobe Express",
-        price: "Free / $9.99/mo",
-        freePlan: true,
-        bestFor: "Creative professionals & teams",
-        features: ["Adobe integration", "Premium templates", "Brand kit", "Video editing", "AI-powered design"],
-        affiliateUrl: "https://express.adobe.com",
-        rating: "★★★★☆",
-        affiliateText: "Try Adobe Express Free",
-      },
     ],
     faq: [
       { q: "Is Canva free to use?", a: "Yes, Canva has a generous free plan with thousands of templates. Pro plans start at $12.99/month." },
@@ -1533,6 +1523,24 @@ const TOOLS_DATA: Record<string, {
       { q: "Does Power Automate work with non-Microsoft apps?", a: "Yes, Power Automate can connect to hundreds of third-party apps via connectors, though Microsoft ecosystem apps have the deepest integration." },
     ],
   },
+  "google-workspace-alternatives": {
+    name: "Google Workspace",
+    desc: "Enterprise productivity suite with Gmail, Drive, Docs, Meet & organizational tools",
+    searchVolume: "150K+ monthly searches",
+    longDescription: "Google Workspace (formerly G Suite) is Google's integrated productivity platform — combining Gmail, Google Drive, Docs, Sheets, Slides, Meet, Calendar, and more into a unified ecosystem for businesses and schools. For organizations already in the Google ecosystem, the integration is genuinely seamless: Docs auto-save to Drive, Meet links appear in Calendar events, and files shared in Chat link directly to Drive. Workspace Individual at $7.20/user/month gives personal access to all tools. Business plans at $12-$18/user/month add custom email domains, admin controls, Vault for archiving, and advanced security. The case for alternatives is usually about ecosystem lock-in versus flexibility: Microsoft 365 offers deeper enterprise features and familiar Office app compatibility. For teams that want Google Docs' real-time collaboration without the rest of Workspace, Zoho Workplace offers Docs, Sheets, and Show at lower prices. Dropbox Paper offers collaborative docs without the email. And open-source alternatives like ONLYOFFICE give you document collaboration with self-hosting options. The core question: does your team benefit from Google's integrated ecosystem, or would a cheaper or more self-controlled alternative serve you better?",
+    alternatives: [
+      { name: "Microsoft 365", price: "$6/user/mo", freePlan: false, bestFor: "Teams wanting familiar Office apps plus Teams integration", features: ["Outlook email", "Word, Excel, PowerPoint", "Teams video & chat", "OneDrive storage", "SharePoint", "Intune device management"], affiliateUrl: "https://microsoft.com/en-us/microsoft-365/business/", rating: "★★★★★", affiliateText: "Try Microsoft 365 Business Basic" },
+      { name: "Zoho Workplace", price: "Free / $3/user/mo", freePlan: true, bestFor: "Budget-conscious teams wanting integrated docs & email", features: ["Mail (custom domain)", "Docs, Sheets, Show", "Cliq (chat)", "Show (presentations)", "Workdrive", "Lower price point"], affiliateUrl: "https://zoho.com/workplace", rating: "★★★★☆", affiliateText: "Try Zoho Workplace Free" },
+      { name: "OnlyOffice", price: "Free (self-hosted) / $8/user/mo", freePlan: true, bestFor: "Teams wanting open-source docs with Microsoft Office compatibility", features: ["Document editors", "CRM & project tools", "Self-hostable", "MS Office format support", "Collaboration", "Portal & mail"], affiliateUrl: "https://onlyoffice.com", rating: "★★★★☆", affiliateText: "Try OnlyOffice Free" },
+      { name: "Dropbox", price: "Free / $9.99/mo", freePlan: true, bestFor: "Users wanting flexible cloud storage without email dependency", features: ["Dropbox Paper", "Smart Sync", "Dropbox Sign", "File sharing", "Transfer large files", "Cross-platform"], affiliateUrl: "https://dropbox.com", rating: "★★★★☆", affiliateText: "Try Dropbox Free" },
+      { name: "Apple iWork", price: "Free", freePlan: true, bestFor: "Apple ecosystem users wanting native, free office tools", features: ["Pages", "Numbers", "Keynote", "iCloud sync", "iPhone/iPad/Mac", "Free for all Apple devices"], affiliateUrl: "https://www.apple.com/iwork/", rating: "★★★★☆", affiliateText: "Try iWork Free" },
+    ],
+    faq: [
+      { q: "Is Google Workspace really worth the price?", a: "For teams already using Google Docs and Gmail, Workspace adds custom email, admin controls, Vault, and security features worth $12-18/user/month. If you only need personal Gmail and free Docs, you can use those without Workspace." },
+      { q: "What is cheaper than Google Workspace?", a: "Zoho Workplace at $3/user/month offers email, docs, chat, and storage at a fraction of the price. Microsoft 365 Business Basic at $6/user/month offers Teams, SharePoint, and Office web apps." },
+      { q: "Can I migrate from Google Workspace easily?", a: "Yes. Microsoft 365 and Zoho Workplace both offer migration tools for importing Gmail data, Drive files, and Calendar events from Google Workspace." },
+    ],
+  },
   "google-drive-alternatives": {
     name: "Google Drive",
     desc: "Cloud file storage, sync & sharing platform integrated with Google Workspace",
@@ -1622,6 +1630,7 @@ export function generateStaticParams() {
     { tool: ["runway-ml-alternatives"] },
     { tool: ["leonardo-ai-alternatives"] },
     { tool: ["power-automate-alternatives"] },
+    { tool: ["google-workspace-alternatives"] },
     { tool: ["google-drive-alternatives"] },
   ];
 }

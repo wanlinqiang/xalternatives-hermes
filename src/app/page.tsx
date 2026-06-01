@@ -40,6 +40,7 @@ const TOP_ALTERNATIVES = [
   { slug: "runway-ml-alternatives", name: "Runway ML", desc: "AI video generation & editing platform", icon: "🎥", visits: "50K+" },
   { slug: "leonardo-ai-alternatives", name: "Leonardo.ai", desc: "AI image generation for game assets & illustrations", icon: "🖼️", visits: "40K+" },
   { slug: "power-automate-alternatives", name: "Power Automate", desc: "Microsoft workflow automation & RPA", icon: "⚡", visits: "40K+" },
+  { slug: "google-workspace-alternatives", name: "Google Workspace", desc: "Productivity suite with Gmail, Docs, Drive & Meet", icon: "☁️", visits: "150K+" },
   { slug: "google-drive-alternatives", name: "Google Drive", desc: "Cloud file storage & Google Workspace sync", icon: "☁️", visits: "200K+" },
 ];
 
