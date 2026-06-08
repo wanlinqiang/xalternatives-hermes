@@ -42,6 +42,10 @@ const TOP_ALTERNATIVES = [
   { slug: "power-automate-alternatives", name: "Power Automate", desc: "Microsoft workflow automation & RPA", icon: "⚡", visits: "40K+" },
   { slug: "google-workspace-alternatives", name: "Google Workspace", desc: "Productivity suite with Gmail, Docs, Drive & Meet", icon: "☁️", visits: "150K+" },
   { slug: "google-drive-alternatives", name: "Google Drive", desc: "Cloud file storage & Google Workspace sync", icon: "☁️", visits: "200K+" },
+  { slug: "tableau-alternatives", name: "Tableau", desc: "Business intelligence & data visualization", icon: "📊", visits: "135K+" },
+  { slug: "amplitude-alternatives", name: "Amplitude", desc: "Product analytics & user behavior", icon: "📈", visits: "55K+" },
+  { slug: "pipedrive-alternatives", name: "Pipedrive", desc: "Sales CRM & pipeline management", icon: "💰", visits: "65K+" },
+  { slug: "mixpanel-alternatives", name: "Mixpanel", desc: "Event-based product analytics", icon: "📊", visits: "45K+" },
 ];
 
 export default function HomePage() {

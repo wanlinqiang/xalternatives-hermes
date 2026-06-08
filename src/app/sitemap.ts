@@ -47,6 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/runway-ml-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/leonardo-ai-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/power-automate-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/google-workspace-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/google-drive-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/tableau-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/amplitude-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/pipedrive-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/mixpanel-alternatives`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
