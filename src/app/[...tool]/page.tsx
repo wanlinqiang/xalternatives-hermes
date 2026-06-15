@@ -1833,6 +1833,132 @@ const TOOLS_DATA: Record<string, {
       { q: "Can I use Google Drive for team collaboration?", a: "Yes, Google Drive allows file sharing and real-time collaboration on Docs, Sheets, and Slides. However, for large teams, per-user costs and SharePoint integration may become a factor." },
     ],
   },
+  "ahrefs-alternatives": {
+    name: "Ahrefs",
+    desc: "All-in-one SEO toolset for backlinks, keyword research & competitor analysis",
+    searchVolume: "200K+ monthly searches",
+    longDescription: "Ahrefs built its reputation as the SEO tool that professionals reach for when they need to understand why a page ranks — its backlink index is considered the most comprehensive, and its site audit crawls sites faster than most competitors. Founded in 2010, it has grown from a backlink checker into a full SEO platform covering keyword research (Keyword Explorer with real click data), content analysis (Content Gap), rank tracking, and competitor analysis. Ahrefs' strength is data depth: its Webmaster Tools are free for anyone who verifies a site, and the paid plans at $99/month (Lite) or $999/month (Agency) reflect the enterprise-grade data you're getting. The main complaint is price — at $99/month for just one seat, it's out of reach for freelancers and small agencies. SEMrush offers similar data with marketing-focused features at a comparable price. Moz is friendlier for beginners with its Domain Authority metric. Ubersuggest from Neil Patel offers budget-friendly pricing. Screaming Frog is the go-to for technical SEO audits. For teams deciding between Ahrefs and SEMrush, the choice often comes down to which backlink index and interface you prefer.",
+    alternatives: [
+      { name: "SEMrush", price: "Free / $119.95/mo", freePlan: true, bestFor: "Full-stack marketing & SEO teams", features: ["Keyword research", "Site audit", "Backlink analysis", "PPC competitor data", "Social media tracking"], affiliateUrl: "https://semrush.com", rating: "★★★★☆", affiliateText: "Try SEMrush Free" },
+      { name: "Moz", price: "Free / $99/mo", freePlan: true, bestFor: "Link building & domain authority tracking", features: ["Keyword Explorer", "Link research", "Site crawl", "Rank tracking", "Domain authority"], affiliateUrl: "https://moz.com", rating: "★★★★☆", affiliateText: "Try Moz Free" },
+      { name: "Ubersuggest", price: "Free / $29/mo", freePlan: true, bestFor: "Budget SEO & keyword research on a tight budget", features: ["Keyword suggestions", "Competitor analysis", "Content ideas", "Rank tracking", "Site audit"], affiliateUrl: "https://neilpatel.com/ubersuggest", rating: "★★★★☆", affiliateText: "Try Ubersuggest Free" },
+      { name: "Screaming Frog", price: "Free / £149/yr", freePlan: true, bestFor: "Technical SEO & site audits for developers", features: ["Site crawling", "Broken link detection", "XML sitemap generation", "Redirect tracking", "Hreflang validation"], affiliateUrl: "https://screamingfrog.co.uk", rating: "★★★★☆", affiliateText: "Try Screaming Frog Free" },
+      { name: "Serpstat", price: "Free / $69.60/mo", freePlan: true, bestFor: "All-in-one SEO platform at mid-market price", features: ["Keyword research", "Rank tracking", "Backlink analysis", "Site audit", "Competitor research"], affiliateUrl: "https://serpstat.com", rating: "★★★★☆", affiliateText: "Try Serpstat Free" },
+    ],
+    faq: [
+      { q: "Is Ahrefs free to use?", a: "Ahrefs Webmaster Tools are free for anyone who verifies ownership of a website. This gives you limited access to site audits, keyword research, and backlink data. Full access requires a paid subscription starting at $99/month." },
+      { q: "What is the best Ahrefs alternative for small businesses?", a: "Ubersuggest from Neil Patel is the most affordable option at $29/month. Moz at $99/month offers a friendlier interface with Domain Authority metrics. For technical SEO only, Screaming Frog at £149/year is excellent value." },
+      { q: "Can I migrate from Ahrefs to another SEO tool?", a: "Yes, SEO data from Ahrefs can be manually exported. Most platforms allow you to import historical data, though real-time rank tracking and alerts won't transfer automatically." },
+    ],
+  },
+  "webflow-alternatives": {
+    name: "Webflow",
+    desc: "Professional website builder with complete design control & CMS",
+    searchVolume: "250K+ monthly searches",
+    longDescription: "Webflow occupies a unique space in website building — it gives designers the visual precision of Figma with the power of a full content management system, all while generating clean, semantic HTML, CSS, and JavaScript. Unlike Wix or Squarespace with their template constraints, Webflow's canvas lets you position anything anywhere, creating truly custom designs. Its CMS lets you build custom content types, e-commerce stores with real inventory management, and membership sites — without writing code. The pricing reflects this power: free for learning and experimenting, $14/month for a basic CMS site, and $37/month for a full e-commerce site (excluding transaction fees). The learning curve is real — Webflow is not a drag-and-drop builder for complete beginners, but designers who master it can build anything. Squarespace is the direct alternative for those who want beautiful templates without the complexity. Framer brings AI-powered design and faster prototyping. WordPress offers maximum extensibility. Bubble targets web app builders. The choice between them comes down to how much design control you need versus how much time you want to invest.",
+    alternatives: [
+      { name: "Framer", price: "Free / $15/mo", freePlan: true, bestFor: "Design-forward landing pages & AI-powered site building", features: ["AI-powered design", "Responsive sites", "CMS built-in", "Custom interactions", "Free hosting"], affiliateUrl: "https://framer.com", rating: "★★★★☆", affiliateText: "Try Framer Free" },
+      { name: "Squarespace", price: "Free / $16/mo", freePlan: true, bestFor: "Beautiful templates & e-commerce for non-technical users", features: ["Award-winning templates", "E-commerce built-in", "Domain registration", "Email campaigns", "Analytics"], affiliateUrl: "https://squarespace.com", rating: "★★★★☆", affiliateText: "Try Squarespace Free" },
+      { name: "Wix", price: "Free / $16/mo", freePlan: true, bestFor: "Drag-and-drop simplicity for complete beginners", features: ["500+ templates", "Wix ADI builder", "App market", "E-commerce", "Blogging tools"], affiliateUrl: "https://wix.com", rating: "★★★★☆", affiliateText: "Try Wix Free" },
+      { name: "WordPress", price: "Free / $5+/mo", freePlan: true, bestFor: "Full control, extensibility & open-source freedom", features: ["Open source", "50K+ plugins", "Full site editing", "Custom themes", "Community support"], affiliateUrl: "https://wordpress.org", rating: "★★★★☆", affiliateText: "Get Started with WordPress" },
+      { name: "Bubble", price: "Free / $32/mo", freePlan: true, bestFor: "No-code web applications & startups", features: ["Visual editor", "Custom workflows", "API connectors", "Responsive design", "Hosting included"], affiliateUrl: "https://bubble.io", rating: "★★★★☆", affiliateText: "Try Bubble Free" },
+    ],
+    faq: [
+      { q: "Is Webflow really free?", a: "Webflow has a generous free plan that lets you build and publish sites on a Webflow.io subdomain. Paid plans start at $14/month for a custom domain and CMS features. E-commerce starts at $37/month." },
+      { q: "What's better than Webflow for design control?", a: "For pure design control, nothing beats Webflow — you can literally position any element anywhere. Framer offers AI-assisted design with slightly less control. WordPress with a custom theme gives you more extensibility but less visual design." },
+      { q: "Can I export my Webflow site?", a: "Yes, Webflow exports clean HTML, CSS, and JavaScript code. You can host the exported site anywhere. However, CMS content and e-commerce functionality require Webflow's hosting to work properly." },
+    ],
+  },
+  "coda-alternatives": {
+    name: "Coda",
+    desc: "Documents that feel like apps — combining docs, wikis, databases & automation",
+    searchVolume: "150K+ monthly searches",
+    longDescription: "Coda launched with a simple but powerful idea: what if a document could behave like an application? Its doc-centric approach lets you embed tables that function as databases, build custom views, add buttons that run automations, and create interconnected documents that reference each other — all within a single doc. Coda's Packs (plugins) connect to tools like Google Calendar, Slack, and GitHub, letting you pull live data into your docs. The free plan is generous for individuals, and the $10/user/month Pro plan unlocks unlimited docs and team features. Coda is particularly beloved by product managers, operations teams, and small companies building internal tools without engineers. Its strength over Notion is the table-as-database model — Coda's tables feel more like spreadsheets with relational data. Notion's database views are more flexible for wikis and documentation. ClickUp combines Coda-style docs with full project management. Airtable is the heavy-duty database alternative. Nuclino is simpler for pure team wikis. The right choice depends on whether you need docs-first or database-first.",
+    alternatives: [
+      { name: "Notion", price: "Free / $10/mo", freePlan: true, bestFor: "All-in-one workspace for docs, wikis & projects", features: ["Docs & wikis", "Databases", "Project management", "Templates", "Team collaboration"], affiliateUrl: "https://notion.so", rating: "★★★★★", affiliateText: "Try Notion Free" },
+      { name: "ClickUp", price: "Free / $7/user/mo", freePlan: true, bestFor: "Project management with built-in docs & wikis", features: ["Docs & wikis", "Task management", "Goals tracking", "Time tracking", "Custom views"], affiliateUrl: "https://clickup.com", rating: "★★★★☆", affiliateText: "Try ClickUp Free" },
+      { name: "Airtable", price: "Free / $20/user/mo", freePlan: true, bestFor: "Database-first collaboration with powerful views", features: ["Custom apps", "Automations", "Integrations", "Views & calendars", "Enterprise scale"], affiliateUrl: "https://airtable.com", rating: "★★★★☆", affiliateText: "Try Airtable Free" },
+      { name: "Nuclino", price: "Free / $8/user/mo", freePlan: true, bestFor: "Team knowledge base with graph connections", features: ["Graph view", "Real-time collaboration", "Markdown support", "Quick linking", "Workspace organization"], affiliateUrl: "https://nuclino.com", rating: "★★★★☆", affiliateText: "Try Nuclino Free" },
+      { name: "Slite", price: "Free / $8/user/mo", freePlan: true, bestFor: "Minimal team docs & knowledge base", features: ["Minimal editor", "Team spaces", "Docs & guides", "Templates", "Quick search"], affiliateUrl: "https://slite.com", rating: "★★★★☆", affiliateText: "Try Slite Free" },
+    ],
+    faq: [
+      { q: "Is Coda free to use?", a: "Yes, Coda has a generous free plan for individuals with unlimited docs. The Pro plan at $10/user/month adds unlimited team members, version history, and admin controls. There's also a free trial of the Team plan." },
+      { q: "What is better than Coda for database functionality?", a: "Airtable is the strongest database alternative — its spreadsheet-database hybrid with powerful views (calendar, kanban, gallery) handles more complex data relationships than Coda. For relational database power, consider NocoDB or Airtable." },
+      { q: "Can I migrate from Notion to Coda?", a: "Yes, Coda has a Notion importer that brings in pages, databases, and content. Both platforms support markdown export, so you can also move content manually if needed." },
+    ],
+  },
+  "freshbooks-alternatives": {
+    name: "FreshBooks",
+    desc: "Cloud accounting software for freelancers & small businesses",
+    searchVolume: "120K+ monthly searches",
+    longDescription: "FreshBooks positioned itself as the accounting software that doesn't require an accounting degree — its clean interface, automatic expense categorisation, and invoice templates make it accessible for freelancers, consultants, and small agencies who need professional invoicing without the complexity of full accounting software. Founded in 2003, it has grown to serve over 30 million users, focusing on time tracking, expense management, project billing, and financial reporting. Its strongest feature is invoicing: professional templates, automatic payment reminders, late fees, and credit card processing (with competitive rates). The Lite plan at $19/month supports up to 5 clients, while the Plus plan at $40/month adds project tracking and time budgets. The main criticism: it's not a full double-entry accounting system — for businesses that need proper general ledger, chart of accounts, and financial statements, QuickBooks or Xero are more appropriate. Wave is completely free for basic accounting. QuickBooks Online offers deeper accounting features. Xero is the choice for businesses needing multi-currency and inventory. Zoho Invoice is the budget alternative with generous free tiers.",
+    alternatives: [
+      { name: "QuickBooks", price: "Free / $30/mo", freePlan: true, bestFor: "Full-featured small business accounting with payroll", features: ["Invoicing", "Expense tracking", "Payroll", "Tax deductions", "Financial reports"], affiliateUrl: "https://quickbooks.intuit.com", rating: "★★★★☆", affiliateText: "Try QuickBooks Free" },
+      { name: "Wave", price: "Free / $19/mo", freePlan: true, bestFor: "Free accounting for freelancers & micro-businesses", features: ["Free invoicing", "Accounting", "Receipt scanning", "Payroll add-on", "Banking connections"], affiliateUrl: "https://waveapps.com", rating: "★★★★☆", affiliateText: "Get Wave Free" },
+      { name: "Xero", price: "Free trial / $15/mo", freePlan: true, bestFor: "Growing businesses needing multi-currency & inventory", features: ["Bank reconciliation", "Invoicing", "Projects", "Fixed assets", "Multi-currency"], affiliateUrl: "https://xero.com", rating: "★★★★☆", affiliateText: "Try Xero Free" },
+      { name: "Zoho Invoice", price: "Free / $9/mo", freePlan: true, bestFor: "Simple invoicing & time tracking in the Zoho ecosystem", features: ["Invoice templates", "Time tracking", "Expense management", "Multi-currency", "Auto payment reminders"], affiliateUrl: "https://zoho.com/invoice", rating: "★★★★☆", affiliateText: "Try Zoho Invoice Free" },
+      { name: "Invoice Ninja", price: "Free / $10/mo", freePlan: true, bestFor: "Open source invoicing with self-host option", features: ["Self-host option", "Invoice builder", "Time tracking", "Client portal", "Task management"], affiliateUrl: "https://invoiceninja.com", rating: "★★★★☆", affiliateText: "Try Invoice Ninja Free" },
+    ],
+    faq: [
+      { q: "Is FreshBooks really free?", a: "FreshBooks offers a 30-day free trial, after which plans start at $19/month for Lite (up to 5 clients). Wave is the only truly free accounting software with no time limits. Zoho Invoice also has a permanently free plan." },
+      { q: "What is the cheapest FreshBooks alternative?", a: "Wave is free (ad-supported) for accounting and invoicing. Zoho Invoice is free for up to 1 user and 5 customers. Invoice Ninja is free with unlimited invoices on the self-hosted version." },
+      { q: "Can I use FreshBooks for payroll?", a: "FreshBooks does not offer native payroll. For payroll features, you'll need QuickBooks which has full payroll integration, or consider adding a dedicated payroll service like Gusto." },
+    ],
+  },
+  "datadog-alternatives": {
+    name: "Datadog",
+    desc: "Cloud-scale monitoring & security platform for infrastructure & applications",
+    searchVolume: "100K+ monthly searches",
+    longDescription: "Datadog became the monitoring standard for cloud-native companies — its SaaS platform unifies metrics, logs, traces, and security signals in one place, supporting AWS, GCP, Azure, Kubernetes, and hundreds of other integrations out of the box. Founded in 2010, it started as an infrastructure monitoring tool and expanded into APM (application performance monitoring), log management, synthetics ( uptime monitoring), and cloud security posture management (CSPM). The platform's strength is correlation: you can trace a slow database query from the APM flame graph to the specific host in your infrastructure view. Datadog's pricing is consumption-based: you pay for hosts monitored, logs ingested, and traces APM. The free plan covers 5 hosts, which is enough to evaluate the product. At $15/host/month for Pro and $23/host/month for Enterprise, costs can escalate quickly for large deployments. For teams that find Datadog expensive or complex, New Relic pivoted to a free tier model, Grafana Cloud offers open-source flexibility, and Sentry focuses specifically on application errors.",
+    alternatives: [
+      { name: "New Relic", price: "Free / $99/user/mo", freePlan: true, bestFor: "Full-stack observability with generous free tier", features: ["APM", "Infrastructure", "Logs", "Browser monitoring", "AI-powered alerts"], affiliateUrl: "https://newrelic.com", rating: "★★★★☆", affiliateText: "Try New Relic Free" },
+      { name: "Grafana Cloud", price: "Free / $75/mo", freePlan: true, bestFor: "Open-source observability at scale with Prometheus & Loki", features: ["Dashboards", "Alerting", "Logs (Loki)", "Prometheus metrics", "Tempo (traces)"], affiliateUrl: "https://grafana.com", rating: "★★★★☆", affiliateText: "Try Grafana Cloud Free" },
+      { name: "Sentry", price: "Free / $26/mo", freePlan: true, bestFor: "Application performance & error tracking for developers", features: ["Error tracking", "Performance monitoring", "Session replay", "Source maps", "GitHub integration"], affiliateUrl: "https://sentry.io", rating: "★★★★☆", affiliateText: "Try Sentry Free" },
+      { name: "Prometheus", price: "Free (self-hosted)", freePlan: true, bestFor: "Open-source metrics collection & alerting", features: ["Time-series database", "Pull-based metrics", "PromQL", "Alertmanager", "Service discovery"], affiliateUrl: "https://prometheus.io", rating: "★★★★☆", affiliateText: "Get Started with Prometheus" },
+      { name: "AppDynamics", price: "Trial / Custom pricing", freePlan: false, bestFor: "Enterprise APM connecting performance to business outcomes", features: ["APM", "Business iQ", "Network monitoring", "Database monitoring", "End-user monitoring"], affiliateUrl: "https://appdynamics.com", rating: "★★★★☆", affiliateText: "Request AppDynamics Demo" },
+    ],
+    faq: [
+      { q: "Is Datadog free to use?", a: "Datadog's free plan covers 5 hosts and includes 1 day of log retention, 1 day of APM retention, and basic infrastructure monitoring. It's enough to evaluate the platform but not for production use." },
+      { q: "What is cheaper than Datadog?", a: "Grafana Cloud starts at $75/month for 3 users and includes generous metric and log limits. Sentry is $26/month for error tracking. Prometheus is completely free if you self-host. New Relic's free tier is the most generous among paid platforms." },
+      { q: "Can I use Datadog for Kubernetes monitoring?", a: "Yes, Datadog has excellent Kubernetes support — the Datadog Agent runs as a DaemonSet and automatically discovers services. It supports Helm charts and has built-in dashboards for Kubernetes workloads." },
+    ],
+  },
+  "convertkit-alternatives": {
+    name: "ConvertKit",
+    desc: "Email marketing platform built for creators, bloggers & podcasters",
+    searchVolume: "60K+ monthly searches",
+    longDescription: "ConvertKit carved out a loyal following among creators by refusing to be everything to everyone — unlike Mailchimp which tries to serve e-commerce, agencies, and enterprises simultaneously, ConvertKit focuses exclusively on bloggers, YouTubers, podcasters, and newsletter writers who want to build an audience and sell digital products or subscriptions. Its creator-first features include visual automation funnels, a built-in storefront for digital products and subscriptions, landing pages, and broadcast emails. The free plan lets you have up to 1,000 subscribers and send unlimited emails. Paid plans start at $9/month for 1,000 subscribers, then scale linearly. What creators love: the simplicity (no confusing segments or complex automation builders), the generous free tier, and the storefront features that would require third-party tools with other platforms. The downside: it's not designed for e-commerce product catalogs or complex e-commerce funnels. Mailchimp is the alternative for e-commerce. ActiveCampaign is the alternative for marketing automation complexity. Substack is the alternative if you only do paid newsletters.",
+    alternatives: [
+      { name: "Mailchimp", price: "Free / $13/mo", freePlan: true, bestFor: "Beginner-friendly email marketing with e-commerce support", features: ["Email builder", "Audience management", "Automation", "Landing pages", "Analytics"], affiliateUrl: "https://mailchimp.com", rating: "★★★★☆", affiliateText: "Try Mailchimp Free" },
+      { name: "ActiveCampaign", price: "Free / $49/mo", freePlan: true, bestFor: "Marketing automation with CRM & machine learning", features: ["Email marketing", "CRM", "Automation builder", "Site messages", "Machine learning"], affiliateUrl: "https://activecampaign.com", rating: "★★★★☆", affiliateText: "Try ActiveCampaign Free" },
+      { name: "Klaviyo", price: "Free / $20/mo", freePlan: true, bestFor: "E-commerce email & SMS marketing with Shopify integration", features: ["Email & SMS", "Segmentation", "Predictive analytics", "Templates", "Shopify integration"], affiliateUrl: "https://klaviyo.com", rating: "★★★★☆", affiliateText: "Try Klaviyo Free" },
+      { name: "Drip", price: "Free / $39/mo", freePlan: true, bestFor: "E-commerce email marketing automation with visual workflows", features: ["Visual automation", "Email segmentation", "Revenue tracking", "SMS marketing", "WooCommerce integration"], affiliateUrl: "https://drip.com", rating: "★★★★☆", affiliateText: "Try Drip Free" },
+      { name: "GetResponse", price: "Free / $15.68/mo", freePlan: true, bestFor: "Email marketing with landing pages & webinar features", features: ["Email marketing", "Landing pages", "Webinars", "Marketing automation", "E-commerce tools"], affiliateUrl: "https://getresponse.com", rating: "★★★★☆", affiliateText: "Try GetResponse Free" },
+    ],
+    faq: [
+      { q: "Is ConvertKit free?", a: "Yes, ConvertKit's free plan supports up to 1,000 subscribers and unlimited emails. Paid plans start at $9/month for 1,000 subscribers and scale linearly. There are no per-email costs." },
+      { q: "What is better than ConvertKit for selling courses?", a: "ConvertKit's built-in storefront is designed for selling courses, digital products, and paid newsletters. Teachable or Podia are dedicated course platforms if you need a full LMS. Gumroad is simpler for selling individual digital products." },
+      { q: "Can I migrate from Mailchimp to ConvertKit?", a: "Yes, ConvertKit has a direct Mailchimp importer that brings over subscribers, tags, and segments. You can also import CSV files from most other platforms." },
+    ],
+  },
+  "activecampaign-alternatives": {
+    name: "ActiveCampaign",
+    desc: "Marketing automation platform combining email, CRM & machine learning",
+    searchVolume: "100K+ monthly searches",
+    longDescription: "ActiveCampaign differentiates itself by combining email marketing with a full CRM and machine learning-powered automation — giving small businesses tools that were previously only available in enterprise marketing clouds. Its automation builder is genuinely powerful: you can create complex conditional workflows that respond to customer behavior across email, site, and e-commerce touchpoints. The CRM features (deal pipelines, contact scoring, and task management) mean you can manage the entire customer lifecycle from first touch to closed deal in one platform. The free plan covers up to 3 automations and 500 contacts. Paid plans start at $49/month for 3 users and scale based on contact count. What makes it powerful also makes it complex: the learning curve is steeper than simpler tools like Mailchimp or ConvertKit. For pure email marketing without CRM, Mailchimp is easier. For e-commerce, Klaviyo has deeper Shopify and WooCommerce integrations. For marketing automation depth, ActiveCampaign is the sweet spot between simplicity and power.",
+    alternatives: [
+      { name: "Mailchimp", price: "Free / $13/mo", freePlan: true, bestFor: "Beginner-friendly email marketing for any business type", features: ["Email campaigns", "Templates", "Audience management", "Landing pages", "Social posting"], affiliateUrl: "https://mailchimp.com", rating: "★★★★☆", affiliateText: "Try Mailchimp Free" },
+      { name: "ConvertKit", price: "Free / $9/mo", freePlan: true, bestFor: "Creator-focused email marketing with storefront features", features: ["Creator landing pages", "Email broadcasts", "Automation rules", "Subscriber tagging", "Sell digital products"], affiliateUrl: "https://convertkit.com", rating: "★★★★☆", affiliateText: "Try ConvertKit Free" },
+      { name: "Klaviyo", price: "Free / $20/mo", freePlan: true, bestFor: "E-commerce email & SMS marketing with predictive analytics", features: ["Email & SMS combined", "Pre-built flows", "Predictive analytics", "Segment builder", "Shopify integration"], affiliateUrl: "https://klaviyo.com", rating: "★★★★☆", affiliateText: "Try Klaviyo Free" },
+      { name: "Sendinblue", price: "Free / $25/mo", freePlan: true, bestFor: "Email marketing with SMS & live chat in one platform", features: ["Transactional email", "SMS campaigns", "Live chat", "Marketing automation", "CRM"], affiliateUrl: "https://sendinblue.com", rating: "★★★★☆", affiliateText: "Try Sendinblue Free" },
+      { name: "HubSpot Marketing", price: "Free / $800/mo", freePlan: true, bestFor: "Enterprise inbound marketing with full funnel visibility", features: ["Email marketing", "Landing pages", "SEO", "Lead management", "Analytics"], affiliateUrl: "https://hubspot.com", rating: "★★★★☆", affiliateText: "Try HubSpot Free" },
+    ],
+    faq: [
+      { q: "Is ActiveCampaign free?", a: "ActiveCampaign has a free plan limited to 500 contacts, 3 automations, and 1 user. Paid plans start at $49/month for 3 users and scale with contact count and additional features." },
+      { q: "What is the best ActiveCampaign alternative for e-commerce?", a: "Klaviyo is the top e-commerce alternative — it was built specifically for Shopify and WooCommerce with pre-built flows for abandoned cart, welcome series, and post-purchase emails. Drip is also strong for e-commerce." },
+      { q: "Can I use ActiveCampaign as a CRM?", a: "Yes, ActiveCampaign includes a built-in CRM with deal pipelines, contact scoring, task assignments, and task automation. This is included in Plus and higher plans at no extra cost." },
+    ],
+  },
 };
 
 function buildTitle(name: string) {
@@ -1910,6 +2036,13 @@ export function generateStaticParams() {
     { tool: ["power-automate-alternatives"] },
     { tool: ["google-workspace-alternatives"] },
     { tool: ["google-drive-alternatives"] },
+    { tool: ["ahrefs-alternatives"] },
+    { tool: ["webflow-alternatives"] },
+    { tool: ["coda-alternatives"] },
+    { tool: ["freshbooks-alternatives"] },
+    { tool: ["datadog-alternatives"] },
+    { tool: ["convertkit-alternatives"] },
+    { tool: ["activecampaign-alternatives"] },
   ];
 }
 

@@ -46,6 +46,13 @@ const TOP_ALTERNATIVES = [
   { slug: "amplitude-alternatives", name: "Amplitude", desc: "Product analytics & user behavior", icon: "📈", visits: "55K+" },
   { slug: "pipedrive-alternatives", name: "Pipedrive", desc: "Sales CRM & pipeline management", icon: "💰", visits: "65K+" },
   { slug: "mixpanel-alternatives", name: "Mixpanel", desc: "Event-based product analytics", icon: "📊", visits: "45K+" },
+  { slug: "ahrefs-alternatives", name: "Ahrefs", desc: "SEO toolset for backlinks, keywords & competitor analysis", icon: "🔍", visits: "200K+" },
+  { slug: "webflow-alternatives", name: "Webflow", desc: "Professional website builder with CMS & e-commerce", icon: "🌐", visits: "250K+" },
+  { slug: "coda-alternatives", name: "Coda", desc: "Docs that feel like apps — wikis, databases & automation", icon: "📄", visits: "150K+" },
+  { slug: "freshbooks-alternatives", name: "FreshBooks", desc: "Cloud accounting for freelancers & small businesses", icon: "💵", visits: "120K+" },
+  { slug: "datadog-alternatives", name: "Datadog", desc: "Cloud monitoring & security for infrastructure & apps", icon: "📊", visits: "100K+" },
+  { slug: "convertkit-alternatives", name: "ConvertKit", desc: "Email marketing for creators, bloggers & podcasters", icon: "✉️", visits: "60K+" },
+  { slug: "activecampaign-alternatives", name: "ActiveCampaign", desc: "Marketing automation with email, CRM & AI", icon: "🤖", visits: "100K+" },
 ];
 
 export default function HomePage() {
